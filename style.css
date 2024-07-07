@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Tenor+Sans|PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic);
-body{background-color: bisque;
+
+body {
+  background-color: bisque;
   font-family: 'Tenor Sans', sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -7,50 +9,64 @@ body{background-color: bisque;
 }
 
 header {
-  
+
   border-bottom: 3px solid black;
- 
+
 }
-.header{
+
+.header {
   display: flex;
   margin-bottom: 15px;
 }
 
-.logo {width: 200px;
-margin-top: 20px;
-margin-left: 20px;
-float: left;
+.logo {
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 20px;
+  float: left;
 }
 
 h1 {
-float: inline-start;
-margin-left: 50px;
-margin-top: 50px;
-color:black
-
+  float: inline-start;
+  margin-left: 50px;
+  margin-top: 50px;
+  color: black
 }
-nav{
+
+nav {
   border-bottom: 3px solid black;
 }
-.link{
+
+.link {
   text-decoration: none;
   margin: 0;
   padding: 25px;
   margin-left: -44px;
+  color: black;
 }
+
 a.link:visited {
   /* Цвет посещённой ссылки */
   color: black;
 }
-ul.menu li{
+
+ul.menu li {
   display: inline-block;
 }
+
 .maininfo {
   margin-left: 25px;
 }
-.mainlist li{
-margin-bottom: 10px;
+
+.mainlist li {
+  margin-bottom: 10px;
+  color: black;
 }
+
+.mainlink {
+  color: black;
+}
+
 a.mainlink:visited {
   /* Цвет посещённой ссылки */
   color: black;
