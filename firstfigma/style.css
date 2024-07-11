@@ -210,3 +210,8 @@ body{
 .footer_images{
 display: block;
 }
+
+.footer_images_tg{
+    display: block;
+    margin-top: -4px;
+    }
