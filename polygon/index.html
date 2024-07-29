@@ -99,6 +99,45 @@
                     </div>
                 </div>
             </div>
+            <button class="accordion">Формы (показать/закрыть)</button>
+            <div class="panel">
+                <div class="items">
+                    <div class="item">
+                        <form action="" class="formpr">
+                            <input class="formob" type="text">
+                            <input class="formob"  type="color">
+                            <input class="formob"  type="date">
+                            <input class="formob"  type="password">
+                            <textarea class="formob"  cols="20" rows="10">Область текста</textarea>
+                            <select class="formob" >
+                                <option value="">Выбор первого</option>
+                                <option value="">Выбор второго</option>
+                            </select>
+                            <button class="formob" >Кнопка обыкновенная</button>
+                        </form>
+                    </div>
+                    <div class="item">
+                        <p><code>&ltform&gt</code> основной тэг форм, <a href="https://doka.guide/html/form/">подробнее...</a></p>
+                        <p><code>&ltinput&gt</code> это тэг поля ввода, включает в себя множество типов для разных задач ввода.</p>
+                        <p><code>&lttexarea&gt</code> - область ввода текста, можно задать размер поля. Имеет закрывающий тэг, можно установить текст по умолчанию.</p>
+                        <p><code>&ltselect&gt</code> и внутри него <code>&ltoption&gt</code> - поле для выбора из предопределенных значений. Тэг самого поля и значений соответственно.</p>
+                        <p><code>&ltbutton&gt</code> - обыкновенная кнопка</p>
+                    </div>
+                </div>
+            </div>
+            <button class="accordion">Атрибуты (показать/закрыть)</button>
+            <div class="panel">
+                <div class="items">
+                    <div class="item">
+                        <p>В уроке были показаны некоторые атрибуты, такие как: <code>&lthiden&gt, &ltclass&gt, &ltid&gt, &lttitle&gt</code></p>
+                        <p>Кратко опишу для чего они. title - при наведении на объект отображает текст который мы обернули в этот атрибут. hidden - скрывает объект со страницы, имеет булево значение можно управлять JS скриптами. Но такое скрытие нельзя анимировать.</p>
+                        <p>class - используется для css стилизации, одинаковый класс можно задать бесконечному количеству элементов на странице.</p>
+                        <p>id - должен быть уникальным для каждого элемента. Позволяет создавать якори на странице.</p>
+                        <p> Это не все глобальные атрибуты, тут можно почитать <a href="https://doka.guide/html/global-attrs/">подробнее...</a></p>
+
+                    </div>
+                </div>
+            </div>
         </div>
 
         <script src="script.js"></script>

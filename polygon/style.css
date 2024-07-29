@@ -134,4 +134,14 @@ a.mlink:visited {
 .item:not(:last-child) {
     margin-right: 100px; /* Отступ между объектами в паре */
 }
+/* Попробуем расположить форму по вертикали*/
+.formpr{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction:column;
+}
+.formob{
+    margin: 2px;
+}
 /* Основной блок */
