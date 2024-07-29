@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Тренировочный полигон</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html">
+                <img class="logo" src="img/logo.png" alt="logo">
+            </a>
+            <div class="title-menu">
+                <h1>Тренировочный полигон</h1>
+                <h2>Курс: Frontend разработчик на HTML, CSS и JavaScript.<br>
+                    Личные конспекты и практика.</h2>
+                <div class="menu">
+                    <ul class="hr">
+                        <li><a class="mlink" href="/polygon/index.html">HTML</a></li>
+                        <li><a class="mlink" href="/polygon/css.html">CSS</a></li>
+                        <li><a class="mlink" href="/polygon/js.html">JavaScript</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="minfo">
+            <button class="accordion">Списки (показать/закрыть)</button>
+            <div class="panel">
+                <div class="items">
+                    <div class="item">
+                        <ol>
+                            <li>Раз</li>
+                            <li>Два</li>
+                        </ol>
+                    </div>
+                    <div class="item">
+                        <p>Тэг <b>&ltol&gt</b> создаёт нумерные списки. Сами пункты списков задаются тэгом
+                            <b>&ltli&gt</b></p>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <ul>
+                            <li>Раз</li>
+                            <li>Два</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <p>Тэг <b>&ltul&gt</b> создаёт нумерные списки. Сами пункты списков задаются тэгом
+                            <b>&ltli&gt</b></p>
+                    </div>
+                </div>
+            </div>
+            <button class="accordion">Таблицы (показать/закрыть)</button>
+            <div class="panel">
+                <div class="items">
+                    <div class="item">
+                        <table border="1">
+                            <caption>Название таблицы</caption>
+                            <tr>
+                                <td>Первая ячейка таблицы</td>
+                                <td>а тут вторая</td>
+                                <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="item">
+                        <p>Тэг <b>&lttable&gt</b> основной для создания таблицы (открывающий/закрывающий) тут в примере
+                            для отображения границ было использовано свойство <b>border="1"</b> у этого тэга.</p>
+                        <p>Тэг <b>&lttr&gt</b> это строка таблицы, а <b>&lttd&gt</b> элемент таблицы образующий столбец
+                            внутри строки. Оба тэга открываются и закрываются.</p>
+                        <p>Для названия используется тэг <b>&ltcaption&gt</b></p>
+                    </div>
+                </div>
+            </div>
+            <button class="accordion">Работа с текстом (показать/закрыть)</button>
+            <div class="panel">
+                <div class="items">
+                    <div class="item">
+
+                    </div>
+                    <div class="item">
+                        div - блочный тэг создаёт абзац, позволяет включать в блок другие тэги для разметки по странице.
+                        span - строчный тэг
+                        hr - тэг сплошной линии.
+                        p - обычный абзац, имеет встроенный отступ сверху и снизу.
+                        h1-h6 - заголовки, могут быть от 1 до 6, у каждого разные отступы по умолчанию. Является
+                        семантическим тэгом имеет смысл при чтении браузером
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </main>
+</body>
+
+</html>

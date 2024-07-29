@@ -1,0 +1,137 @@
+body {
+    background-color: #e4a67d;
+    font-family: 'Tenor Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    align-items: start;
+    padding: 10px;
+    background-color: #c5846e;
+}
+
+.logo {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.title-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 0px;
+    margin-left: 10px;
+    font-size: 35px;
+}
+
+h2 {
+    margin: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.menu {
+    margin-top: 130px;
+}
+
+.hr {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.hr li {
+    padding: 5px 10px;
+    background-color: #c17356;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+
+.hr li:hover {
+    background-color: #0056b3;
+}
+
+/*Ссылка*/
+.mlink{
+    text-decoration: none
+    ;
+}
+
+a.mlink:visited {
+    /* Цвет посещённой ссылки */
+    color: black;
+  }
+  /*Ссылка*/
+
+  
+/* Основной блок*/
+
+/* чат жпт помог сделать скрывающиеся объекты под записи*/
+.accordion {
+    background-color: #e4a67d;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+}
+
+.active, .accordion:hover {
+    background-color: #c17356;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: #c5846e;
+    overflow: hidden;
+    
+}
+/* чат жпт помог сделать скрывающиеся объекты под записи*/
+.minfo {
+    padding-top: 10px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.panel {
+    width: 98.1%;
+}
+.items {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px; /* Отступ между парами */
+    
+}
+
+.item {
+    flex: 1;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    line-height: 20px;
+    
+}
+
+.item:not(:last-child) {
+    margin-right: 100px; /* Отступ между объектами в паре */
+}
+/* Основной блок */
