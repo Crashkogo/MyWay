@@ -17,7 +17,7 @@
             <div class="title-menu">
                 <h1>Тренировочный полигон</h1>
                 <h2>Курс: Frontend разработчик на HTML, CSS и JavaScript.<br>
-                Личные конспекты и практика.</h2>
+                    Личные конспекты и практика.</h2>
                 <div class="menu">
                     <ul class="hr">
                         <li><a class="mlink" href="index.html">HTML</a></li>
@@ -29,7 +29,331 @@
         </div>
     </header>
     <main>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quia dolorem, laboriosam, voluptatem dolore iure aut ipsam sed odio mollitia quibusdam necessitatibus non corrupti earum ipsa laborum modi, autem nesciunt?
+        <div class="minfo">
+            <button class="accordion">CSS селекторы (показать/закрыть)</button>
+            <div class="panel">
+                <div class="items">
+                    <div class="item">
+                        <table class="csstable" border="1">
+                            <caption>Селектор / Описание и пример</caption>
+                            <tr>
+                                <td>
+                                    <p>Селектор * {}</p>
+                                </td>
+                                <td>
+                                    <p>Селектор в виде * общий селектор обозначает, что значения применяются для всего
+                                        документа сразу.</p>
+                                    <p><code>
+                                * {
+                                    color: red;
+                                }
+                            </code>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Селектор h1 {}
+                                </td>
+                                <td>
+                                    <p>h1 - название любого тэга напрямую, указывается без дополнительных знаков</p>
+                                    <p><code>
+                                h1 {
+                                    color: red;
+                                }
+                            </code>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Селектор .classname {}
+                                </td>
+                                <td>
+                                    <p>.classname - имя класса который мы присваиваем тэгу через
+                                        <code>class = "classname"</code> ставим точку перед именем.
+                                    </p>
+                                    <p>Можно присваивать нескольким объектам. Можно присваивать несколько классов одному
+                                        объекту.</p>
+                                    <p><code>
+                                .classname {
+                                    color: red;
+                                }
+                            </code>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Селектор #idname {}
+                                </td>
+                                <td>
+                                    <p>#idname - имя айди который мы присваиваем тэгу через <code>id = "idname"</code>
+                                        ставим # перед именем.</p>
+                                    <p>Можно присваивать только в единичном экземпляре.</p>
+                                    <p><code>
+                                        #idname {
+                                            color: red;
+                                        }
+                                    </code></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Селектор по атрибуту div[title] {} или с уточнением div[title="namehere"] {}
+                                </td>
+                                <td>
+                                    <p>div[title] - обращение свойств css к тэгу с определенным атрибутом, можно
+                                        указывать более точно со значением атрибута.</p>
+                                    <p><code>div[title="namehere"] {color: red;}</code></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Немного пояснений</td>
+                                <td>Селекторы считываются сверху вниз в файле, если мы к более точному значению
+                                    селектора ниже от основного укажем другие свойства, будут применены они.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <button class="accordion">Работа с картинками (показать/закрыть)</button>
+            <div class="panel">
+                <div class="items">
+                    <div class="item">
+                        <table class="csstable" border="1">
+                            <tr>
+                                <td>
+                                    <div class="csslogo">
+                                        <p>test text for background</p>
+                                        <p>test text for background</p>
+                                        <p>test text for background</p>
+                                        <p>test text for background</p>
+                                        <p>test text for background</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>
+                                        Тут в примере я установил изображение на фон тэга div прикреплённое к классу
+                                        "csslogo".
+                                    </p>
+                                    <p><code>&ltdiv&gt class="csslogo"&lt/div&gt</code> </p>
+                                    <p><code>.csslogo {<br>
+                                        background-image: url(img/csslogo.png); // <b>З</b>адаём путь до картинки. Если файл css лежит не в одном и том же каталоге со страницей, для перехода на прошлый уровень используются "../". url(../img/csslogo.png)</code><br>
+                                        background-repeat: no-repeat; // <b>C</b>войство, чтобы картинка не повторялась.
+                                        Имеет разные свойства по осям повторения.<br>
+                                        background-size: 150px; // <b>Р</b>азмер картинки в пикселях.<br>
+                                        background-position-x: center; // <b>Ц</b>ентрирование картинки в блоке.<br>
+                                        }</code></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <button class="accordion">Границы элементов (рамки)</button>
+            <div class="panel">
+                <div class="items">
+                    <div class="item">
+                        <table class="csstable" border="1">
+                            <tr>
+                                <td>
+                                    <div class="testborder1">
+                                        <p>test text for border</p>
+                                        <p>test text for border</p>
+                                        <p>test text for border</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <code>
+                                        .testborder1{<br>
+                                            border: 5px green solid;// размер границы, цвет границы, стиль границы - сплошная<br>
+                                            border-radius: 10px;// радиус закругления рамки<br>      
+                                        }<br>
+                                    </code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="testborder2">
+                                        <p>test text for border</p>
+                                        <p>test text for border</p>
+                                        <p>test text for border</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <code>
+                                    .testborder2{<br>
+                                        border: 10px rgb(160, 102, 136) dotted ; //стиль в точку<br>
+                                        border-radius: 10px;<br>
+                                    }
+                                 </code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="testborder3">
+                                        <p>test text for border</p>
+                                        <p>test text for border</p>
+                                        <p>test text for border</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <code>
+                                        .testborder3{<br>
+                                            border: 5px yellow dashed; // в черточку<br>
+                                            border-radius: 10px;<br> 
+                                        }<br>
+                                    </code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="testborder4">
+                                        <p>test text for border</p>
+                                        <p>test text for border</p>
+                                        <p>test text for border</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <code>
+                                        .testborder4{<br>
+                                            border: 5px rgb(48, 153, 100) double;// двойная<br>
+                                            border-radius: 50px;<br>
+                                        }
+                                    </code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="testborder5">
+                                        <p>test text for border</p>
+                                        <p>test text for border</p>
+                                        <p>test text for border</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <code>
+                                        .testborder5{<br>
+                                            border: 5px green groove;//рамка объёмная, с тенями от источника света, находящегося в верхнем левом наружном углу.<br>
+                                            border-radius: 10px 20px 30px 40px;// Каждый угол закруглён по своему<br>
+                                        }<br>
+                                    </code>
+                                    <p> Существуют и другие стили с тенями. Посмотреть <a
+                                            href="https://doka.guide/css/border-style/">тут</a></p>
+                                    <p> У рамок очень много свойств, подробнее можно посмотреть <a
+                                            href="https://developer.mozilla.org/ru/docs/Web/CSS/border">тут</a></p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <button class="accordion">Размеры элементов</button>
+            <div class="panel">
+                <div class="items">
+                    <div class="item">
+                        <div class="size">
+                        </div>
+                        <div class="size2">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>Тут я для примера создал два дива каждый со своим классом и задал им несколько разных
+                            свойств:<br> <code>height: 50px; width: 150px; border: 1px solid black;</code>
+                            <br>Так задаются размеры элемента, высота и ширина. Границу поставил для наглядности. <br>
+                            Скруглить элемент можно параметром <code> border-radius: 50%</code>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="accordion">Шрифты</button>
+            <div class="panel">
+                <div class="items">
+                    <div class="item">
+                        <table class="fonttable" border="1">
+                            <tr>
+                                <td class="fontp1">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem laudantium minima
+                                    eaque sequi, cupiditate dignissimos corporis voluptate, distinctio accusantium porro
+                                    officiis ratione aspernatur laboriosam adipisci. Earum voluptatum ratione minima
+                                    iusto.
+                                    <br>тут используется <code>font-family: monospace</code>
+                                </td>
+                                <td>
+                                    font-family<br>
+                                    Имя шрифтового семейства — то, которое будет использоваться на странице. Например,
+                                    «Times» или «Helvetica».<br>
+                                    Тип шрифтового семейства — прописывается последним на случай, если ни одного из
+                                    семейств
+                                    нет на компьютере пользователя:<br>
+                                    <code>serif</code> — шрифтовое семейство с засечками, например, «Times»;<br>
+                                    <code>sans-serif</code> — шрифтовое семейство без засечек, например, «Arial»;<br>
+                                    <code>monospace</code> — семейства моноширинных шрифтов с одинаковой шириной каждого
+                                    символа. Похожи на текст, набранный на печатной машинке. Например, шрифт
+                                    «Courier»;<br>
+                                    <code>cursive</code> — семейство с похожим на рукописное курсивным написанием
+                                    символов
+                                    или italic;<br>
+                                    <code>fantasy</code> — семейство с декоративными символами;<br>
+                                    <code>system-ui</code> — использует стандартные шрифты на устройстве пользователя.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fontp2">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ratione vitae
+                                    corrupti impedit eaque, odit veniam aliquid consequuntur fugiat similique nisi optio
+                                    tempore nihil architecto velit sit! Voluptatem, adipisci laudantium?
+                                </td>
+                                <td><code>
+                            .fontp2{<br>
+                                font-family: Arial;<br>
+                                font-size: 20px; - размер шрифта в пикселях<br>
+                                font-weight: 500; - ширина шрифта от 100 до 900, где 400 - это нормальный.<br>
+                                line-height: 30px; - межстрочный интервал<br> 
+                                text-align: center; - выравнивание текста<br>
+                                text-decoration: none; - underline (подчеркивание), line-through (зачеркивание), overline (черта сверху)<br>
+                                text-transform: capitalize; <a href="https://doka.guide/css/text-transform/">Подробнее</a><br>
+                            }
+                        </code>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <button class="accordion">Блочная модель</button>
+            <div< class="panel">
+                <div class="items">
+                    <div class="item">
+                        <div class="box box1"> BOX 1</div>
+                        <div class="box box2"> BOX 2</div>
+                        <div class="box box3"> BOX 3 BOX 3 BOX 3 BOX 3 BOX 3 BOX 3 BOX 3 BOX 3 </div>
+                    </div>
+                    <div class="item">
+                        <p>Блоки представляют из себя объекты, которым мы задаём размеры. <br>
+                            Для блоков есть свойства такие как: <br>
+                            <code>
+                                padding - внутренний отступ внутри блока. Расширяет сам блок. Пример записи:<br>
+                                padding: 10px; или padding: 10px 10px 10px 10px - в этом случае проставляются отступы от каждого края начиная с верхнего и по часовой стрелке<br>
+                                Пример - box 1, имеет размер 50 на 50, и общий padding 10, тем самым увеличился по сравнению с box 2
+                                <br>
+                                <br>
+                                margin - внешний отступ от блока. Записывается аналогично с padding.<br>
+                                Пример - box 2, имеет отступ только с левого края в 30px
+                                <br>
+                                <br>
+                                Box 3 имеет размеры 150 на 150 и свойство padding в 30px, но в этом случае размер бокса не изменился т.к. к нему применено свойство  box-sizing: border-box;<br>
+                                <img src="img/box3.png">
+                                <br> На картинке мы видим, что padding и border включены в размеры, но почему то теряется 1 пиксель (потом разобраться) 
+                            </code>
+                        </p>
+                    </div>
+                </div>
+            </class>
+        </div>
+        <script src="script.js"></script>
     </main>
 </body>
 

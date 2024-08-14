@@ -145,3 +145,92 @@ a.mlink:visited {
     margin: 2px;
 }
 /* Основной блок */
+/*css раздел*/
+.csstable td{
+    padding: 15px;
+}
+.fonttable td{
+    padding: 15px;
+}
+.csslogo {
+    background-image: url(img/csslogo.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position-x: center;
+}
+/*css border*/
+.testborder1{
+    border: 5px green solid;
+    border-radius: 10px;
+    
+}
+.testborder2{
+    border: 10px rgb(160, 102, 136) dotted ;
+    border-radius: 10px;
+}
+.testborder3{
+    border: 5px yellow dashed ;
+    border-radius: 10px; 
+}
+.testborder4{
+    border: 5px rgb(48, 153, 100) double ;
+    border-radius: 50px;
+}
+.testborder5{
+    border: 5px green groove ;
+    border-radius: 10px 20px 30px 40px; 
+}
+/*css border*/
+.size{
+    height: 50px;
+    width: 150px;
+    border: 1px solid black;
+    margin: 20px;
+}
+.size2{
+    height: 90px;
+    width: 180px;
+    border: 1px solid black;
+    margin: 20px;
+    border-radius: 50%;
+}
+.fontp1{
+    font-family: monospace;
+    width: 400px;
+}
+.fontp2{
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 400px;
+}
+.box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.box1 {
+    background-color:blueviolet;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    
+}
+.box2 {
+    background-color: cornflowerblue;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.box3 {
+    width: 150px;
+    height: 150px;
+    background-color:crimson;
+    padding: 30px;
+    box-sizing: border-box;
+}
+/*css раздел*/
