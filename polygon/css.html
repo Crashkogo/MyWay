@@ -324,7 +324,7 @@
                 </div>
             </div>
             <button class="accordion">Блочная модель</button>
-            <div< class="panel">
+            <div class="panel">
                 <div class="items">
                     <div class="item">
                         <div class="box box1"> BOX 1</div>
@@ -346,12 +346,174 @@
                                 <br>
                                 Box 3 имеет размеры 150 на 150 и свойство padding в 30px, но в этом случае размер бокса не изменился т.к. к нему применено свойство  box-sizing: border-box;<br>
                                 <img src="img/box3.png">
-                                <br> На картинке мы видим, что padding и border включены в размеры, но почему то теряется 1 пиксель (потом разобраться) 
+                                <br> На картинке мы видим, что padding и border включены в размеры. <b>!!!</b>считать размер блока нужно со всех сторон.
                             </code>
                         </p>
                     </div>
                 </div>
-            </class>
+            </div>
+            <button class="accordion">Псевдоклассы и псевдоэлементы</button>
+            <div class="panel">
+                <div class="items">
+                    <div class="item">
+                        <table class="csstable" border="1">
+                            <tr>
+                                <td class="pseudotd">
+                                </td>
+                                <td>
+                                    <p>Псевдоклассы — особый вид селектора, который уточняет тип или состояние. Обычно
+                                        это какой-то качественный признак: реакция на наведение курсора, порядок
+                                        следования и другие.</p>
+                                    <p>Ещё в этом уроке почему то рассказывается про css свойство <code>cursor</code>, к
+                                        левому блоку применил cursor: pointer;</p>
+                                    <code>
+                            .pseudotd:hover { - псевдокласс hover применяет свойство при наведении <br>
+                                background-color:blue;<br>
+                              }<br>
+                            </code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul class="listch">
+                                        <li class="list-itemch">Пункт таблицы</li>
+                                        <li class="list-itemch">Пункт таблицы</li>
+                                        <li class="list-itemch">Пункт таблицы</li>
+                                        <li class="list-itemch">Пункт таблицы</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <p>При помощи этих псевдоклассов можно удобно выбирать элементы по их порядковому
+                                        номеру внутри родительского элемента.</p>
+                                    <p><code>.list-itemch - класс дочерних элементов внутри списка тэга li</code></p>
+                                    <code>.list-itemch:first-child{ - обрабатывает первый элемент<br>
+                                    background-color: aqua;<br>
+                                }<br>
+                                .list-itemch:nth-child(2) { - обрабатывает элемент по порядку который указан в скобках, для выбора каждого третьего элемента указываем (3n), для четного (even), для нечетного (odd)<br>
+                                    background-color: #ab41e8;<br>
+                                  }<br>
+                                .list-itemch:last-child{<br>
+                                    background-color: rgb(129, 127, 221);<br>
+                                }<br>
+                                .list-itemch:nth-last-child(2){<br>
+                                    background-color: rgb(0, 255, 0);<br>
+                                }</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="pseudoel">Чел</p>
+                                </td>
+                                <td>
+                                    <p><a href="https://doka.guide/css/pseudoelements/">Псевдоэлементы</a> — это
+                                        элементы, которых не существует в HTML-разметке. Они создаются и позиционируются
+                                        исключительно при помощи CSS. Чаще всего используются для создания различных
+                                        декоративных элементов (которые не несут содержательного смысла).</p><br>
+                                    <code>
+                                .pseudoel::before{ - Добавляет "контент" перед блоком<br>
+                                    content: "Привет, ";<br>
+                                }<br>
+                                .pseudoel::after{ - Добавляет "контент" после блока<br>
+                                    content: " ну ты и чел.";<br>
+                                }<br>
+                                .pseudoel::first-letter{ - Изменяет первую букву строки<br>
+                                    font-size: 30px;<br>
+                                    color:rgb(48, 153, 100);<br>
+                                }<br>
+                                ::selection{ - Этот псевдоэлемент был применён на всю страницу и он изменил цвет выделения текста<br>
+                                    background-color:#ab41e8;<br>
+                                }<br>
+                            </code>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <button class="accordion">Flexbox</button>
+            <div class="panel">
+                <div class="items">
+                    <div class="item">
+                        <div class="parentsone">
+                            <div>Flexbox text test</div>
+                            <div>Flexbox text test</div>
+                            <div>Flexbox text test</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        Свойство <code>display: flex</code> устанавливается для родителя элементов которые располагаются
+                        нужным образом. <br>В данном случае мы задали только его и соседние элементы выстроились в одну
+                        строчку без каких либо дополнительных условий.
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <div class="parentstwo">
+                            <div> justify-content: space-around</div>
+                            <div> justify-content: space-around</div>
+                            <div> justify-content: space-around</div>
+                        </div>
+                        <div class="parentsthree">
+                            <div>justify-content: flex-end;</div>
+                            <div>align-items: center;</div>
+                            <div>Flexbox text test</div>
+                        </div>
+                        <div class="parentsfour">
+                            <div>flex-direction: column;</div>
+                            <div>justify-content: center</div>
+                            <div>align-items: center;</div>
+                        </div>
+                        <div class="parentsfive">
+                            <div>Дополнительные материалы из курса для помощи:</div>
+                            <div><a href="https://codepip.com/games/flexbox-froggy/"> Игра "Flexbox Froggy"</a></div>
+                            <div><a href="https://yoksel.github.io/flex-cheatsheet/">Интерактивный справочник напомнит о свойствах и том как они работают</a></div>
+                            <div><a href="https://youtu.be/Hf__JLlFxpk?si=06uecaMEgiAZvwZ2">Большое практическое видео по Flexbox</a></div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        свойство justify-content, которое выравнивает элементы горизонтально и принимает следующие
+                        значения:<br>
+                        flex-start: элементы выравниваются по левой стороне контейнера.<br>
+                        flex-end: элементы выравниваются по правой стороне контейнера.<br>
+                        center: элементы выравниваются по центру контейнера.<br>
+                        space-between: элементы отображаются с одинаковыми отступами между ними.<br>
+                        space-around: элементы отображаются с одинаковыми отступами вокруг них.<br>
+                        <br>
+                        свойство align-items CSS выравнивает элементы вертикально и принимает следующие значения
+                        (align-self - для элементов):<br>
+                        flex-start: элементы выравниваются по верхнему краю контейнера.<br>
+                        flex-end: элементы выравниваются по нижнему краю контейнера.<br>
+                        center: элементы выравниваются вертикально по центру контейнера.<br>
+                        baseline: элементы отображаются на базовой линии контейнера.<br>
+                        stretch: элементы растягиваются, чтобы заполнить контейнер.<br>
+                        <br>
+                        flex-direction – это свойство CSS задает направление, в котором будут расположены элементы в
+                        контейнере, и принимает следующие значения:<br>
+                        row: элементы размещаются по направлению текста.<br>
+                        row-reverse: элементы отображаются в обратном порядке к направлению текста.<br>
+                        column: элементы располагаются сверху вниз.<br>
+                        column-reverse: элементы располагаются снизу вверх.<br>
+                        <br>
+                        свойство flex-wrap, которое принимает следующие значения:<br>
+                        nowrap: размеры элементов устанавливаются автоматически, чтобы они поместились в один ряд.<br>
+                        wrap: элементы автоматически переносятся на новую строку.<br>
+                        wrap-reverse: элементы автоматически переносятся на новую строку, но строки расположены в
+                        обратном порядке.<br>
+                        <br>
+                        свойство flex-flow для их комбинирования flex-direction и flex-wrap<br>
+                        <br>
+                        свойство align-content, чтобы указать, как и несколько рядов должны отделяться друг от
+                        друга:<br>
+                        flex-start: ряды группируются в верхней части контейнера.<br>
+                        flex-end: ряды группируются в нижней части контейнера.<br>
+                        center: ряды группируются вертикально по центру контейнера.<br>
+                        space-between: ряды отображаются с одинаковыми расстояниями между ними.<br>
+                        space-around: ряды отображаются с одинаковыми расстояниями вокруг них.<br>
+                        stretch: ряды растягиваются, чтобы заполнить контейнер равномерно.<br>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="script.js"></script>
     </main>

@@ -233,4 +233,77 @@ a.mlink:visited {
     padding: 30px;
     box-sizing: border-box;
 }
+.pseudotd{
+    background-color: #c5846e;
+    width: 500px;
+    cursor: pointer;
+}
+.pseudotd:hover{
+    background-color:blue     
+}
+.list-itemch:first-child{
+    background-color: aqua;
+}
+.list-itemch:nth-child(2) {
+    background-color: #ab41e8;
+  }
+.list-itemch:last-child{
+    background-color: rgb(129, 127, 221);
+}
+.list-itemch:nth-last-child(2){
+    background-color: rgb(0, 255, 0);
+}
+.pseudoel::before{
+    content: "Привет, ";
+}
+.pseudoel::after{
+    content: " ну ты и чел.";
+}
+.pseudoel::first-letter{
+    font-size: 30px;
+    color:rgb(48, 153, 100);
+}
+::selection{
+    background-color:#ab41e8;
+}
+.parentsone{
+    display: flex;
+    border: 1px black solid;
+}
+.parentstwo{
+    width: 500px;
+    height: 200px;
+    border: 1px black solid;
+    display: flex;
+    justify-content: space-around;
+}
+.parentsthree{
+    width: 500px;
+    height: 200px;
+    border: 1px black solid;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.parentsthree>div{
+margin: 10px;
+}
+.parentsfour{
+    width: 500px;
+    height: 200px;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.parentsfive{
+    width: 500px;
+    height: 200px;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /*css раздел*/
