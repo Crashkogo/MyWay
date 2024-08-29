@@ -1,0 +1,156 @@
+@font-face {
+    font-family: Gotham;
+    src: url(../fonts/Gotham-Bold.otf);
+}
+@font-face {
+    font-family: Proxima;
+    src: url(../fonts/proximanova-regular.otf);
+}
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box; 
+}
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.team{
+    background-color: #f3f3f3;
+}
+.team__inner {
+    text-align: center;
+}
+.team_tittle {
+    font-style: 30px;
+    font-family: "Gotham";
+    color: rgb(48, 48, 48);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 50px;
+    margin: 0;  
+    padding-top: 50px;  
+}
+.team___line {
+    width: 184px;
+    height: 3px;
+    background-color: #303030;
+    margin: 0 auto;
+}
+.team___text {
+    font-family: 16px;
+    font-family: "Proxima";
+    color: rgb(90,90,90);
+    line-height: 25px;
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 540px;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    padding-top: 55px;
+}
+.item {
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 1, 1, 0.2);
+    min-width: 210px;
+    padding: 20px 35px;
+}
+.item__img {
+    margin-bottom: 10px;
+}
+.item__title { 
+    font-family: 16px;
+    font-family: "Gotham";
+    color: rgb(48, 48, 48);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 16px;
+    margin: 0 0 10px 0;
+ 
+}
+.item__text {
+    font-size: 12px;
+    font-family: "Georgia";
+    color: rgb(48,48,48);
+    font-style: italic;
+    line-height: 12px;
+    margin: 0 0 10px 0;
+    
+}
+
+.fa {
+    font-size: 20px;
+    color: #7f7f7f;
+    margin: 0 10px;
+}
+/*HW*/
+.hw {
+    background-color: #fff;
+}
+.hw_container {
+    width: 900px;
+    margin: 0 auto;
+}
+.hw_title {
+    text-align: center;
+    margin: 0;
+    font-size: 36px;
+    color: rgb(33, 33, 33);
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+.hw_line {
+    width: 64px;
+    height: 2px;
+    background-color: orange;
+    margin: 0 auto 30px;
+}
+.hw_title__desc {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 80px;
+    font-size: 16px;
+    color: rgb(134, 135, 139); 
+}
+
+.hw_blocks {
+    display: flex;
+    justify-content: space-between;
+}
+.hw_item {
+    max-width: 330px;
+    text-align: center;
+    min-width: 330px;
+    margin-bottom: 40px;
+}
+.fahw {
+    color: #ff8b38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    margin: 0 auto;
+    border: 2px solid #ff8b38;
+    border-radius: 50%;
+}
+.hw_item_text {
+    font-weight: 400;
+    margin: 25px 0 20px;
+}
+.hw_item_desc {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(134, 135, 139);
+}
