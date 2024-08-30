@@ -301,7 +301,7 @@ ul>a:hover {
     letter-spacing: -0.03em;
 
     color: #161616;
-
+    margin-top: 40px;
 
 }
 
@@ -348,7 +348,7 @@ ul>a:hover {
     font-size: 22px;
     line-height: 27px;
     color: #FFFFFF;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .bd {
@@ -366,7 +366,7 @@ ul>a:hover {
     font-size: 22px;
     line-height: 27px;
     color: #FFFFFF;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .bottom {
@@ -382,8 +382,6 @@ ul>a:hover {
 .bottom_text {
     width: 611px;
     height: 28px;
-
-
     font-family: 'PT Serif';
     font-style: normal;
     font-weight: 400;
