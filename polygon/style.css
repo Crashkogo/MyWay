@@ -38,6 +38,7 @@ h2 {
 
 .menu {
     margin-top: 130px;
+
 }
 
 .hr {
@@ -46,6 +47,7 @@ h2 {
     margin: 0;
     display: flex;
     gap: 15px;
+    
 }
 
 .hr li {
@@ -64,8 +66,7 @@ h2 {
 
 /*Ссылка*/
 .mlink{
-    text-decoration: none
-    ;
+    text-decoration: none;
 }
 
 a.mlink:visited {
@@ -306,4 +307,27 @@ margin: 10px;
     justify-content: center;
     align-items: center;
 }
+
+[mytitle]{
+    cursor: pointer;
+}
+[mytitle]:after{
+    content: '';
+    transition: 0.2s;
+}
+
+[mytitle]:hover:after{
+    width: 550px;
+    display: block;
+    content: attr(mytitle);
+    background-color:cadetblue;
+    padding: 10px;
+    z-index: 100;
+}
 /*css раздел*/
+/*cssgrid раздел*/
+.gridtrack {
+    background-color: #0056b3;
+}
+
+/*cssgrid раздел*/

@@ -22,6 +22,7 @@
                     <ul class="hr">
                         <li><a class="mlink" href="index.html">HTML</a></li>
                         <li><a class="mlink" href="css.html">CSS</a></li>
+                        <li><a class="mlink" href="grid-css.html">CSS-Grid</a></li>
                         <li><a class="mlink" href="js.html">JavaScript</a></li>
                         <li><a href="practice.html" class="mlink">Practice</a></li>
                         <li><a href="../img/GitHelper.jpg" class="mlink" target="_blank">Git prompt</a></li>
@@ -468,8 +469,10 @@
                         <div class="parentsfive">
                             <div>Дополнительные материалы из курса для помощи:</div>
                             <div><a href="https://codepip.com/games/flexbox-froggy/"> Игра "Flexbox Froggy"</a></div>
-                            <div><a href="https://yoksel.github.io/flex-cheatsheet/">Интерактивный справочник напомнит о свойствах и том как они работают</a></div>
-                            <div><a href="https://youtu.be/Hf__JLlFxpk?si=06uecaMEgiAZvwZ2">Большое практическое видео по Flexbox</a></div>
+                            <div><a href="https://yoksel.github.io/flex-cheatsheet/">Интерактивный справочник напомнит о
+                                    свойствах и том как они работают</a></div>
+                            <div><a href="https://youtu.be/Hf__JLlFxpk?si=06uecaMEgiAZvwZ2">Большое практическое видео
+                                    по Flexbox</a></div>
                         </div>
 
                     </div>
@@ -516,6 +519,46 @@
                     </div>
                 </div>
             </div>
+            <button class="accordion">Использование псевдоэлементов (расширенное)</button>
+            <div class="panel">
+                <div class="items">
+                    <div class="item">
+                       <ul>
+                        <li mytitle="Подсказки которые появляются при наведении на текст">Первый текст</li>
+                        <li mytitle="Подсказки которые появляются при наведении на текст">Второй текст</li>
+                        <li mytitle="Подсказки которые появляются при наведении на текст">Третий текст</li>
+                       </ul>
+                    </div>
+                    <div class="item">
+                        Тут мы добавляем свойство mytitle делая аналог свойству title. Которое отображает подсказку при наведении на текст.<br>
+                        <code>
+                            [mytitle]{<br>
+                                cursor: pointer;<br>
+                            }<br>
+                            [mytitle]:after{<br>
+                                content: '';<br>
+                                transition: 0.2s;<br>
+                            }<br>
+                            
+                            [mytitle]:hover:after{<br>
+                                width: 550px;<br>
+                                display: block;<br>
+                                content: attr(mytitle);<br>
+                                background-color:cadetblue;<br>
+                                padding: 10px;<br>
+                                z-index: 100;<br>
+                            }<br>
+                        </code>
+                        <p>Обращаемся по нашему свойству через квадратные скобки [mytitle]</p>
+                        <p>В псевдоклассе after указываем переход к другому состоянию элемента с задержкой в 0.2c</p>
+                        <p>И в псевдоклассе hover указываем свойства того, что будет отображаться при наведении. <br>
+                        в свойстве content указываем сам наш атрибут mytitle для отображения текста который мы в него закладываем.</p>
+                        <p>Если не указать свойство <code>display: block;</code>, тогда подсказка будет показываться справа от элемента</p>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
         <script src="script.js"></script>
     </main>

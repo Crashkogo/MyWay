@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Тренировочный полигон</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html">
+                <img class="logo" src="img/logo.png" alt="logo">
+            </a>
+            <div class="title-menu">
+                <h1>Тренировочный полигон</h1>
+                <h2>Курс: Frontend разработчик на HTML, CSS и JavaScript.<br>
+                    Личные конспекты и практика.</h2>
+                <div class="menu">
+                    <ul class="hr">
+                        <li><a class="mlink" href="index.html">HTML</a></li>
+                        <li><a class="mlink" href="css.html">CSS</a></li>
+                        <li><a class="mlink" href="grid-css.html">CSS-Grid</a></li>
+                        <li><a class="mlink" href="js.html">JavaScript</a></li>
+                        <li><a href="practice.html" class="mlink">Practice</a></li>
+                        <li><a href="../img/GitHelper.jpg" class="mlink" target="_blank">Git prompt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <p>Решил выделить под grid отдельную страничку. В курсе предоставлен справочник по технологии, буду использовать
+            его. ->><a class="mlink" href="https://morphismail.github.io/css-grid-manual/">ТЫК</a><<- </p>
+                <button class="accordion">Начальные понятия CSS-GRID</button>
+                <div class="panel">
+                    <div class="items">
+                        <div class="item">
+                            <table class="csstable" border="1">
+                                <tr>
+                                    <td>
+                                        Технология grid используется для дочерних элементов grid контейнера. Мы
+                                        применяем свойство к верхнему элементу внутри которого лежат элементы которыми
+                                        мы хотим управлять.
+                                    </td>
+                                    <td>
+                                        <b>HTML:</b><br>
+                                        <code>&ltdiv class="grid-container"&gt<br>
+                                            &ltdiv class="item"&gt<br>
+                                            &ltdiv class="item"&gt<br>
+                                            &ltdiv class="item"&gt<br>
+                                            &lt/div&gt</code><br>
+                                        <b>CSS:</b><br>
+                                        <code>
+                                                .grid-container{<br>
+                                                    display: grid;<br>
+                                                }
+                                            </code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Линия сетки. Линии бывают как линии колонки так и линии
+                                        строки. Линия идёт слева на право или сверху вниз и отсчёт начинается с 1.
+                                    </td>
+                                    <td>
+                                        <table class="cssgridm" border="1">
+                                            <tr>
+                                                <td>
+                                                    ↑ Первая горизонтальная<br>
+                                                    ← Первая вертикальная
+                                                </td>
+                                                <td>
+                                                    2
+                                                </td>
+                                                <td>
+                                                    3
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    ↑ Вторая горизонтальная<br>
+                                                    Вторая вертикальная →
+                                                </td>
+                                                <td>
+                                                    5
+                                                </td>
+                                                <td>
+                                                    6
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Трек сетки. Это пространство между двумя линиями. Как
+                                        горизонтальными так и вертикальными.
+                                    </td>
+                                    <td>
+                                        <table class="cssgridm" border="1">
+                                            <tr>
+                                                <td class="gridtrack">1</td>
+                                                <td class="gridtrack">2</td>
+                                                <td class="gridtrack">3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>5</td>
+                                                <td>6</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ячейка сетки - отдельная единица изммерения сетки. Находится между двумя
+                                        соседними линями строк и столбцов</td>
+                                    <td>
+                                        <table class="cssgridm" border="1">
+                                            <tr>
+                                                <td>1</td>
+                                                <td class="gridtrack">2</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>5</td>
+                                                <td>6</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Область сетки - любое пространство из нескольких ячеек рядом</td>
+                                    <td>
+                                        <table class="cssgridm" border="1">
+                                            <tr>
+                                                <td class="gridtrack">1</td>
+                                                <td class="gridtrack">2</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="gridtrack">4</td>
+                                                <td class="gridtrack">5</td>
+                                                <td>6</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <button class="accordion">Схема устройства grid контейнера из справочника</button>
+                <div class="panel">
+                    <div class="items">
+                        <div class="item">
+                            <img src="img/css-grid.png" alt="css-grid">
+                        </div>
+                    </div>
+                </div>
+
+                <script src="script.js"></script>
+    </main>
+</body>
+
+</html>
