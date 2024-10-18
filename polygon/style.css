@@ -357,6 +357,7 @@ margin: 10px;
 .grid-item:nth-child(odd){
     background: #666;
 }
+
 .grid-item:nth-child(even){
     background: #4b4949;
 }
