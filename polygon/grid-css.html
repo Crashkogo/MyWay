@@ -161,6 +161,112 @@
                         </div>
                     </div>
                 </div>
+                <button class="accordion">Практика CSS-GRID</button>
+                <div class="panel">
+                    <div class="items">
+                        <div class="item">
+                            тут мы указываем свойства <code>display: grid;<br>
+                            grid-template-colums: 100px 100px 100px; <br></code>
+                            Получаем 3 столбца по 100 пикселей, остальное пространство при этом не заполняется
+                        </div>
+                        <div class="item">
+                            <div class="grid-container-px">
+                                <div class="grid-item item1">1</div>
+                                <div class="grid-item item2">2</div>
+                                <div class="grid-item item3">3</div>
+                                <div class="grid-item item4">4</div>
+                                <div class="grid-item item5">5</div>
+                                <div class="grid-item item6">6</div>
+                                <div class="grid-item item7">7</div>
+                                <div class="grid-item item8">8</div>
+                                <div class="grid-item item9">9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            тут мы указываем свойства <code>display: grid;<br>
+                            grid-template-colums: 30% 30% 30%; <br></code>
+                            Получаем 3 столбца по 30% для каждого из элементов
+                        </div>
+                        <div class="item">
+                            <div class="grid-container-percent">
+                                <div class="grid-item item1">1</div>
+                                <div class="grid-item item2">2</div>
+                                <div class="grid-item item3">3</div>
+                                <div class="grid-item item4">4</div>
+                                <div class="grid-item item5">5</div>
+                                <div class="grid-item item6">6</div>
+                                <div class="grid-item item7">7</div>
+                                <div class="grid-item item8">8</div>
+                                <div class="grid-item item9">9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            тут мы указываем свойства <code>display: grid;<br>
+                            grid-template-colums: 2fr 1fr 1fr; <br></code>
+                            fr - это фракция свободного пространства. Тут мы получаем 1 столбец на 2 фракции и 2 столбца по 1, что наглядно видно. Фракции занимают весь объём контейнера. <br>
+                            Фракции можно использовать десятичные 0.5fr и т.п.
+                        </div>
+                        <div class="item">
+                            <div class="grid-container-fr">
+                                <div class="grid-item item1">1</div>
+                                <div class="grid-item item2">2</div>
+                                <div class="grid-item item3">3</div>
+                                <div class="grid-item item4">4</div>
+                                <div class="grid-item item5">5</div>
+                                <div class="grid-item item6">6</div>
+                                <div class="grid-item item7">7</div>
+                                <div class="grid-item item8">8</div>
+                                <div class="grid-item item9">9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            тут мы указываем свойства <code>display: grid;<br>
+                            grid-template-colums: repeat(2,0.5fr 2fr ); <br></code>
+                            repeat() функция повторения. Конкретно тут мы используеся двойное повторение двух значений фракций<br>
+                            Так же можно использовать функцию minmax() внутри функции повторения. например если указать repeat(3,minmax(150px,1fr)), тогда при изменении размера окна браузера минимальный размер ячейки будет 150 пикселей, а максимальый 1 занимаемая фракция.
+                            
+                        </div>
+                        <div class="item">
+                            <div class="grid-container-re">
+                                <div class="grid-item item1">1</div>
+                                <div class="grid-item item2">2</div>
+                                <div class="grid-item item3">3</div>
+                                <div class="grid-item item4">4</div>
+                                <div class="grid-item item5">5</div>
+                                <div class="grid-item item6">6</div>
+                                <div class="grid-item item7">7</div>
+                                <div class="grid-item item8">8</div>
+                                <div class="grid-item item9">9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            тут мы указываем свойства <code>display: grid;<br>
+                            grid-template-colums: repeat(auto-fit,minmax(300px,1fr)); <br></code>
+                            Тут мы вместо количества повторений указываем свойство auto-fit, что при использовании функции minmax() позволяет элементам переходить на новую строку, а не активировать полосу прокрутки в браузере<br>
+                            </div>
+                        <div class="item">
+                            <div class="grid-container-afit">
+                                <div class="grid-item item1">1</div>
+                                <div class="grid-item item2">2</div>
+                                <div class="grid-item item3">3</div>
+                                <div class="grid-item item4">4</div>
+                                <div class="grid-item item5">5</div>
+                                <div class="grid-item item6">6</div>
+                                <div class="grid-item item7">7</div>
+                                <div class="grid-item item8">8</div>
+                                <div class="grid-item item9">9</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <script src="script.js"></script>
     </main>

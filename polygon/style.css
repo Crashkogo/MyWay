@@ -329,5 +329,35 @@ margin: 10px;
 .gridtrack {
     background-color: #0056b3;
 }
-
+.grid-container-px{
+    border: 2px solid rgb(29, 28, 88);
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+}
+.grid-container-percent{
+    border: 2px solid rgb(29, 28, 88);
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+.grid-container-fr{
+    border: 2px solid rgb(29, 28, 88);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+.grid-container-re{
+    border: 2px solid rgb(29, 28, 88);
+    display: grid;
+    grid-template-columns: repeat(2,0.5fr 2fr );
+}
+.grid-container-afit{
+    border: 2px solid rgb(29, 28, 88);
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}
+.grid-item:nth-child(odd){
+    background: #666;
+}
+.grid-item:nth-child(even){
+    background: #4b4949;
+}
 /*cssgrid раздел*/
