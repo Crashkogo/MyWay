@@ -47,7 +47,7 @@ h2 {
     margin: 0;
     display: flex;
     gap: 15px;
-    
+
 }
 
 .hr li {
@@ -56,7 +56,7 @@ h2 {
     color: black;
     border-radius: 5px;
     cursor: pointer;
-    
+
 }
 
 
@@ -65,17 +65,18 @@ h2 {
 }
 
 /*Ссылка*/
-.mlink{
+.mlink {
     text-decoration: none;
 }
 
 a.mlink:visited {
     /* Цвет посещённой ссылки */
     color: black;
-  }
-  /*Ссылка*/
+}
 
-  
+/*Ссылка*/
+
+
 /* Основной блок*/
 
 /* чат жпт помог сделать скрывающиеся объекты под записи*/
@@ -91,7 +92,8 @@ a.mlink:visited {
     transition: 0.5s;
 }
 
-.active, .accordion:hover {
+.active,
+.accordion:hover {
     background-color: #c17356;
 }
 
@@ -100,8 +102,9 @@ a.mlink:visited {
     display: none;
     background-color: #c5846e;
     overflow: hidden;
-    
+
 }
+
 /* чат жпт помог сделать скрывающиеся объекты под записи*/
 .minfo {
     padding-top: 10px;
@@ -111,14 +114,17 @@ a.mlink:visited {
     align-items: center;
     flex-direction: column;
 }
+
 .panel {
     width: 98.1%;
 }
+
 .items {
     display: flex;
     width: 100%;
-    margin-bottom: 10px; /* Отступ между парами */
-    
+    margin-bottom: 10px;
+    /* Отступ между парами */
+
 }
 
 .item {
@@ -129,77 +135,92 @@ a.mlink:visited {
     width: 100%;
     border-bottom: 1px solid black;
     line-height: 20px;
-    
+
 }
 
 .item:not(:last-child) {
-    margin-right: 100px; /* Отступ между объектами в паре */
+    margin-right: 100px;
+    /* Отступ между объектами в паре */
 }
+
 /* Попробуем расположить форму по вертикали*/
-.formpr{
+.formpr {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    flex-direction:column;
+    flex-direction: column;
 }
-.formob{
+
+.formob {
     margin: 2px;
 }
+
 /* Основной блок */
 /*css раздел*/
-.csstable td{
+.csstable td {
     padding: 15px;
 }
-.fonttable td{
+
+.fonttable td {
     padding: 15px;
 }
+
 .csslogo {
     background-image: url(img/csslogo.png);
     background-repeat: no-repeat;
     background-size: 150px;
     background-position-x: center;
 }
+
 /*css border*/
-.testborder1{
+.testborder1 {
     border: 5px green solid;
     border-radius: 10px;
-    
+
 }
-.testborder2{
-    border: 10px rgb(160, 102, 136) dotted ;
+
+.testborder2 {
+    border: 10px rgb(160, 102, 136) dotted;
     border-radius: 10px;
 }
-.testborder3{
-    border: 5px yellow dashed ;
-    border-radius: 10px; 
+
+.testborder3 {
+    border: 5px yellow dashed;
+    border-radius: 10px;
 }
-.testborder4{
-    border: 5px rgb(48, 153, 100) double ;
+
+.testborder4 {
+    border: 5px rgb(48, 153, 100) double;
     border-radius: 50px;
 }
-.testborder5{
-    border: 5px green groove ;
-    border-radius: 10px 20px 30px 40px; 
+
+.testborder5 {
+    border: 5px green groove;
+    border-radius: 10px 20px 30px 40px;
 }
+
 /*css border*/
-.size{
+.size {
     height: 50px;
     width: 150px;
     border: 1px solid black;
     margin: 20px;
 }
-.size2{
+
+.size2 {
     height: 90px;
     width: 180px;
     border: 1px solid black;
     margin: 20px;
     border-radius: 50%;
 }
-.fontp1{
+
+.fontp1 {
     font-family: monospace;
     width: 400px;
 }
-.fontp2{
+
+.fontp2 {
     font-family: Arial;
     font-size: 20px;
     font-weight: 500;
@@ -209,6 +230,7 @@ a.mlink:visited {
     text-transform: capitalize;
     width: 400px;
 }
+
 .box {
     width: 50px;
     height: 50px;
@@ -216,11 +238,12 @@ a.mlink:visited {
 }
 
 .box1 {
-    background-color:blueviolet;
+    background-color: blueviolet;
     padding: 10px;
     margin: 0 0 10px 0;
-    
+
 }
+
 .box2 {
     background-color: cornflowerblue;
     margin-left: 30px;
@@ -230,55 +253,68 @@ a.mlink:visited {
 .box3 {
     width: 150px;
     height: 150px;
-    background-color:crimson;
+    background-color: crimson;
     padding: 30px;
     box-sizing: border-box;
 }
-.pseudotd{
+
+.pseudotd {
     background-color: #c5846e;
     width: 500px;
     cursor: pointer;
 }
-.pseudotd:hover{
-    background-color:blue     
+
+.pseudotd:hover {
+    background-color: blue
 }
-.list-itemch:first-child{
+
+.list-itemch:first-child {
     background-color: aqua;
 }
+
 .list-itemch:nth-child(2) {
     background-color: #ab41e8;
-  }
-.list-itemch:last-child{
+}
+
+.list-itemch:last-child {
     background-color: rgb(129, 127, 221);
 }
-.list-itemch:nth-last-child(2){
+
+.list-itemch:nth-last-child(2) {
     background-color: rgb(0, 255, 0);
 }
-.pseudoel::before{
+
+.pseudoel::before {
     content: "Привет, ";
 }
-.pseudoel::after{
+
+.pseudoel::after {
     content: " ну ты и чел.";
 }
-.pseudoel::first-letter{
+
+.pseudoel::first-letter {
     font-size: 30px;
-    color:rgb(48, 153, 100);
+    color: rgb(48, 153, 100);
 }
-::selection{
-    background-color:#ab41e8;
+
+::selection {
+    background-color: #ab41e8;
 }
-.parentsone{
+
+.parentsone {
     display: flex;
     border: 1px black solid;
 }
-.parentstwo{
+
+.parentstwo {
     width: 500px;
     height: 200px;
     border: 1px black solid;
     display: flex;
     justify-content: space-around;
 }
-.parentsthree{
+
+.parentsthree {
     width: 500px;
     height: 200px;
     border: 1px black solid;
@@ -286,19 +322,12 @@ a.mlink:visited {
     justify-content: flex-end;
     align-items: center;
 }
-.parentsthree>div{
-margin: 10px;
+
+.parentsthree>div {
+    margin: 10px;
 }
-.parentsfour{
-    width: 500px;
-    height: 200px;
-    border: 1px black solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.parentsfive{
+
+.parentsfour {
     width: 500px;
     height: 200px;
     border: 1px black solid;
@@ -308,57 +337,143 @@ margin: 10px;
     align-items: center;
 }
 
-[mytitle]{
+.parentsfive {
+    width: 500px;
+    height: 200px;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+[mytitle] {
     cursor: pointer;
 }
-[mytitle]:after{
+
+[mytitle]:after {
     content: '';
     transition: 0.2s;
 }
 
-[mytitle]:hover:after{
+[mytitle]:hover:after {
     width: 550px;
     display: block;
     content: attr(mytitle);
-    background-color:cadetblue;
+    background-color: cadetblue;
     padding: 10px;
     z-index: 100;
 }
+
 /*css раздел*/
 /*cssgrid раздел*/
 .gridtrack {
     background-color: #0056b3;
 }
-.grid-container-px{
+
+.grid-container-px {
     border: 2px solid rgb(29, 28, 88);
     display: grid;
     grid-template-columns: 100px 100px 100px;
 }
-.grid-container-percent{
+
+.grid-container-percent {
     border: 2px solid rgb(29, 28, 88);
     display: grid;
     grid-template-columns: 30% 30% 30%;
 }
-.grid-container-fr{
+
+.grid-container-fr {
     border: 2px solid rgb(29, 28, 88);
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
 }
-.grid-container-re{
+
+.grid-container-re {
     border: 2px solid rgb(29, 28, 88);
     display: grid;
-    grid-template-columns: repeat(2,0.5fr 2fr );
+    grid-template-columns: repeat(2, 0.5fr 2fr);
 }
-.grid-container-afit{
+
+.grid-container-afit {
     border: 2px solid rgb(29, 28, 88);
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
-.grid-item:nth-child(odd){
+
+.grid-container-row {
+    border: 2px solid rgb(29, 28, 88);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 50px 25px;
+}
+
+.grid-container-ch {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item1ch {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item4ch {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+}
+
+.grid-container-sort {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-flow: column;
+}
+
+.grid-item:nth-child(odd) {
     background: #666;
 }
 
-.grid-item:nth-child(even){
+.grid-item:nth-child(even) {
     background: #4b4949;
+}
+.grid-item-area:nth-child(odd) {
+    background: #666;
+}
+
+.grid-item-area:nth-child(even) {
+    background: #4b4949;
+}
+
+.grid-container-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 150px 350px 40px;
+    grid-template-areas:
+        "header header header header"
+        "main main main sidebar"
+        "footer footer footer sidebar";
+}
+
+.item1-area {grid-area: header; border: 2px solid rgb(179, 166, 58);}
+
+.item2-area {grid-area: main; border: 2px solid rgb(179, 166, 58);}
+
+.item3-area {grid-area: sidebar; border: 2px solid rgb(179, 166, 58);}
+
+.item4-area {grid-area: footer; border: 2px solid rgb(179, 166, 58);}
+
+@media screen and (max-width: 900px){
+    .grid-container-area{
+        grid-template-rows: 150px 150px 300px 50px;
+        grid-template-areas:
+        "header header header header"
+        "sidebar sidebar sidebar sidebar"
+        "main main main main"
+        "footer footer footer footer";
+    }
 }
 /*cssgrid раздел*/

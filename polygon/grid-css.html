@@ -207,8 +207,12 @@
                         <div class="item">
                             тут мы указываем свойства <code>display: grid;<br>
                             grid-template-colums: 2fr 1fr 1fr; <br></code>
-                            fr - это фракция свободного пространства. Тут мы получаем 1 столбец на 2 фракции и 2 столбца по 1, что наглядно видно. Фракции занимают весь объём контейнера. <br>
-                            Фракции можно использовать десятичные 0.5fr и т.п.
+                            fr - это фракция свободного пространства. Тут мы получаем 1 столбец на 2 фракции и 2 столбца
+                            по 1, что наглядно видно. Фракции занимают весь объём контейнера. <br>
+                            Фракции можно использовать десятичные 0.5fr и т.п.<br>
+                            Так же укажем тут свойство grid-column-gap: 10px, что является отступом между колонками
+                            шириной в 10 пикселей.<br>
+                            grid-row-gap: 20px; Тоже самое только для строк.
                         </div>
                         <div class="item">
                             <div class="grid-container-fr">
@@ -228,9 +232,12 @@
                         <div class="item">
                             тут мы указываем свойства <code>display: grid;<br>
                             grid-template-colums: repeat(2,0.5fr 2fr ); <br></code>
-                            repeat() функция повторения. Конкретно тут мы используеся двойное повторение двух значений фракций<br>
-                            Так же можно использовать функцию minmax() внутри функции повторения. например если указать repeat(3,minmax(150px,1fr)), тогда при изменении размера окна браузера минимальный размер ячейки будет 150 пикселей, а максимальый 1 занимаемая фракция.
-                            
+                            repeat() функция повторения. Конкретно тут мы используеся двойное повторение двух значений
+                            фракций<br>
+                            Так же можно использовать функцию minmax() внутри функции повторения. например если указать
+                            repeat(3,minmax(150px,1fr)), тогда при изменении размера окна браузера минимальный размер
+                            ячейки будет 150 пикселей, а максимальый 1 занимаемая фракция.
+
                         </div>
                         <div class="item">
                             <div class="grid-container-re">
@@ -250,8 +257,10 @@
                         <div class="item">
                             тут мы указываем свойства <code>display: grid;<br>
                             grid-template-colums: repeat(auto-fit,minmax(300px,1fr)); <br></code>
-                            Тут мы вместо количества повторений указываем свойство auto-fit, что при использовании функции minmax() позволяет элементам переходить на новую строку, а не активировать полосу прокрутки в браузере<br>
-                            </div>
+                            Тут мы вместо количества повторений указываем свойство auto-fit, что при использовании
+                            функции minmax() позволяет элементам переходить на новую строку, а не активировать полосу
+                            прокрутки в браузере<br>
+                        </div>
                         <div class="item">
                             <div class="grid-container-afit">
                                 <div class="grid-item item1">1</div>
@@ -266,8 +275,115 @@
                             </div>
                         </div>
                     </div>
+                    <div class="items">
+                        <div class="item">
+                            тут мы указываем свойства <code>display: grid;<br>
+                            grid-template-colums: 1fr 1fr 1fr; <br>
+                            grid-template-rows: 100px 50px 25px <br></code>
+                            Всё тоже самое мы можем указать и для строк <br>
+                        </div>
+                        <div class="item">
+                            <div class="grid-container-row">
+                                <div class="grid-item item1">1</div>
+                                <div class="grid-item item2">2</div>
+                                <div class="grid-item item3">3</div>
+                                <div class="grid-item item4">4</div>
+                                <div class="grid-item item5">5</div>
+                                <div class="grid-item item6">6</div>
+                                <div class="grid-item item7">7</div>
+                                <div class="grid-item item8">8</div>
+                                <div class="grid-item item9">9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            Далее рассмотрим свойства применяемые к дочерним элементам. Т.е. к контейнерам которые
+                            находятся внутри контейнера к которому применили основное grid свойство. <br>
+                            Тут мы к первому элементу применяем свойства:<br>
+                            grid-column-start: 1;<br>
+                            grid-column-end: 3;<br>
+                            И справа видим, что первый элемент начинается с 1 линии и заканчивается третьей.<br>
+                            К 4 элементу мы применили свойство grid-column-end: span 3. Тем самым указали, что 4 ячейка
+                            должна занимать все 3 свободных пространства
+                        </div>
+                        <div class="item">
+                            <div class="grid-container-ch">
+                                <div class="grid-item item1ch">1</div>
+                                <div class="grid-item item2ch">2</div>
+                                <div class="grid-item item3ch">3</div>
+                                <div class="grid-item item4ch">4</div>
+                                <div class="grid-item item5ch">5</div>
+                                <div class="grid-item item6ch">6</div>
+                                <div class="grid-item item7ch">7</div>
+                                <div class="grid-item item8ch">8</div>
+                                <div class="grid-item item9ch">9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            Рассмотрим свойство сортировки ячеек grid-auto-flow: ... <br>
+                            По умолчанию у него значение row, что значит строчную сортировку слева на право.<br>
+                            Второе значение column, что делает сортировку сверху вниз как видно на примере.
+                        </div>
+                        <div class="item">
+                            <div class="grid-container-sort">
+                                <div class="grid-item item1">1</div>
+                                <div class="grid-item item2">2</div>
+                                <div class="grid-item item3">3</div>
+                                <div class="grid-item item4">4</div>
+                                <div class="grid-item item5">5</div>
+                                <div class="grid-item item6">6</div>
+                                <div class="grid-item item7">7</div>
+                                <div class="grid-item item8">8</div>
+                                <div class="grid-item item9">9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            При использовании grid area задаём имена областям внутри основного контейнера. Например:<br>
+                            .item1-area{grid-area: header}<br>
+                            После создания имён, мы можем использовать свойство:<br>
+                            grid-templates-areas:<br>
+                            "header header header header"<br>
+                            "main main main sidebar"<br>
+                            "footer footer footer sidebar"<br>
+                            На примере видно, что мы как бы "графически" изображаем область как распологаются наши
+                            дочернии контейнеры которым мы дали названия.<br>
+                            Далее добавим медиа запрос к нашей области.<br><code>
+                            @media screen and (max-width: 900px){<br>
+                           .grid-container-area{<br>
+                            grid-template-rows: 150px 150px 300px 50px;<br>
+                            grid-template-areas:<br>
+                            "header header header header"<br>
+                            "sidebar sidebar sidebar sidebar"<br>
+                            "main main main main"<br>
+                            "footer footer footer footer";<br>
+                            }<br>
+                            }<br></code>
+                            И если мы сузим страничку браузера, наши области встанут друг под другом как прописано в
+                            этих медиая свойствах. таким образом делаем адаптивную вёрстку при помощи grid.
+                        </div>
+                        <div class="item">
+                            <div class="grid-container-area">
+                                <div class="grid-item-area item1-area">H</div>
+                                <div class="grid-item-area item2-area">M</div>
+                                <div class="grid-item-area item3-area">S</div>
+                                <div class="grid-item-area item4-area">F</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            Далее в курсе рассказывается про выравнивания. Но они работают так же как и при использовании флексбоксов. Синтаксис можно посмотреть в справочнике.<br>
+                            Из того, что нужно запомнить так это саму возможность выравнивать элементы в общем контейнере так и выравнивание контента внутри самой ячейки области.
+                        </div>
+                
+                    </div>
                 </div>
-
+                
                 <script src="script.js"></script>
     </main>
 </body>
