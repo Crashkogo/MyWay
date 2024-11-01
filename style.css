@@ -1,75 +1,485 @@
-@import url(https://fonts.googleapis.com/css?family=Tenor+Sans|PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic);
-
 body {
-  background-color: bisque;
-  font-family: 'Tenor Sans', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  font-style: normal;
-}
-
-header {
-
-  border-bottom: 3px solid black;
-
+    background-color: #e4a67d;
+    font-family: 'Tenor Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
 }
 
 .header {
-  display: flex;
-  margin-bottom: 15px;
+    background-color: #c5846e;
+    height: 250px;
+    padding: 10px;
+}
+.grid-logo{grid-area:logo}
+.grid-title{grid-area:title}
+.grid-menu{grid-area:menu}
+
+.grid-header{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 157px 90px;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "logo title"
+    "logo menu";
+    align-items: start;
 }
 
-.logo {
-  width: 200px;
-  margin-top: 20px;
-  margin-left: 20px;
-  float: left;
+.grid-logo {
+    grid-area: logo;
+    max-width: 200px;
+    max-height: 250px; /* Ограничим высоту логотипа */
+    align-self: start; /* Выравниваем по верхнему краю */
+}
+.grid-menu {
+    grid-area: menu;
+    align-self: start; /* Выравниваем меню по верхнему краю */
 }
 
 h1 {
-  float: inline-start;
-  margin-left: 50px;
-  margin-top: 50px;
-  color: black
+
+    font-size: 35px;
 }
 
-nav {
-  border-bottom: 3px solid black;
+h2 {
+
+    font-size: 15px;
 }
 
-.link {
-  text-decoration: none;
-  margin: 0;
-  padding: 25px;
-  margin-left: -44px;
-  color: black;
-}
-
-a.link:visited {
-  /* Цвет посещённой ссылки */
-  color: black;
-}
-
-ul.menu li {
-  display: inline-block;
-}
-
-.maininfo {
-  margin-left: 25px;
-}
-
-.mainlist li {
-  margin-bottom: 10px;
-  color: black;
-}
-
-.mainlink {
-  
-  color: black;
+.hr {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(7,minmax(50px, 150px));
+    gap: 15px;
 
 }
 
-a.mainlink:visited {
-  /* Цвет посещённой ссылки */
-  color: black;
+.hr li {
+    padding: 5px 10px;
+    background-color: #c17356;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+
 }
+
+
+.hr li:hover {
+    background-color: #0056b3;
+}
+
+/*Ссылка*/
+.mlink {
+    text-decoration: none;
+}
+
+a.mlink:visited {
+    /* Цвет посещённой ссылки */
+    color: black;
+}
+
+/*Ссылка*/
+
+/* Основной блок*/
+
+/* чат жпт помог сделать скрывающиеся объекты под записи*/
+.accordion {
+    background-color: #e4a67d;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #c17356;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: #c5846e;
+    overflow: hidden;
+
+}
+
+/* чат жпт помог сделать скрывающиеся объекты под записи*/
+.minfo {
+    padding-top: 10px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.panel {
+    width: 98.1%;
+}
+
+.items {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    /* Отступ между парами */
+
+}
+
+.item {
+    flex: 1;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    line-height: 20px;
+
+}
+
+.item:not(:last-child) {
+    margin-right: 100px;
+    /* Отступ между объектами в паре */
+}
+
+/* Попробуем расположить форму по вертикали*/
+.formpr {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formob {
+    margin: 2px;
+}
+
+/* Основной блок */
+/*css раздел*/
+.csstable td {
+    padding: 15px;
+}
+
+.fonttable td {
+    padding: 15px;
+}
+
+.csslogo {
+    background-image: url(img/csslogo.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position-x: center;
+}
+
+/*css border*/
+.testborder1 {
+    border: 5px green solid;
+    border-radius: 10px;
+
+}
+
+.testborder2 {
+    border: 10px rgb(160, 102, 136) dotted;
+    border-radius: 10px;
+}
+
+.testborder3 {
+    border: 5px yellow dashed;
+    border-radius: 10px;
+}
+
+.testborder4 {
+    border: 5px rgb(48, 153, 100) double;
+    border-radius: 50px;
+}
+
+.testborder5 {
+    border: 5px green groove;
+    border-radius: 10px 20px 30px 40px;
+}
+
+/*css border*/
+.size {
+    height: 50px;
+    width: 150px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.size2 {
+    height: 90px;
+    width: 180px;
+    border: 1px solid black;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.fontp1 {
+    font-family: monospace;
+    width: 400px;
+}
+
+.fontp2 {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 400px;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.box1 {
+    background-color: blueviolet;
+    padding: 10px;
+    margin: 0 0 10px 0;
+
+}
+
+.box2 {
+    background-color: cornflowerblue;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.box3 {
+    width: 150px;
+    height: 150px;
+    background-color: crimson;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.pseudotd {
+    background-color: #c5846e;
+    width: 500px;
+    cursor: pointer;
+}
+
+.pseudotd:hover {
+    background-color: blue
+}
+
+.list-itemch:first-child {
+    background-color: aqua;
+}
+
+.list-itemch:nth-child(2) {
+    background-color: #ab41e8;
+}
+
+.list-itemch:last-child {
+    background-color: rgb(129, 127, 221);
+}
+
+.list-itemch:nth-last-child(2) {
+    background-color: rgb(0, 255, 0);
+}
+
+.pseudoel::before {
+    content: "Привет, ";
+}
+
+.pseudoel::after {
+    content: " ну ты и чел.";
+}
+
+.pseudoel::first-letter {
+    font-size: 30px;
+    color: rgb(48, 153, 100);
+}
+
+::selection {
+    background-color: #ab41e8;
+}
+
+.parentsone {
+    display: flex;
+    border: 1px black solid;
+}
+
+.parentstwo {
+    width: 500px;
+    height: 200px;
+    border: 1px black solid;
+    display: flex;
+    justify-content: space-around;
+}
+
+.parentsthree {
+    width: 500px;
+    height: 200px;
+    border: 1px black solid;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.parentsthree>div {
+    margin: 10px;
+}
+
+.parentsfour {
+    width: 500px;
+    height: 200px;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parentsfive {
+    width: 500px;
+    height: 200px;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+[mytitle] {
+    cursor: pointer;
+}
+
+[mytitle]:after {
+    content: '';
+    transition: 0.2s;
+}
+
+[mytitle]:hover:after {
+    width: 550px;
+    display: block;
+    content: attr(mytitle);
+    background-color: cadetblue;
+    padding: 10px;
+    z-index: 100;
+}
+
+/*css раздел*/
+/*cssgrid раздел*/
+.gridtrack {
+    background-color: #0056b3;
+}
+
+.grid-container-px {
+    border: 2px solid rgb(29, 28, 88);
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+}
+
+.grid-container-percent {
+    border: 2px solid rgb(29, 28, 88);
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.grid-container-fr {
+    border: 2px solid rgb(29, 28, 88);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+.grid-container-re {
+    border: 2px solid rgb(29, 28, 88);
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr 2fr);
+}
+
+.grid-container-afit {
+    border: 2px solid rgb(29, 28, 88);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.grid-container-row {
+    border: 2px solid rgb(29, 28, 88);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 50px 25px;
+}
+
+.grid-container-ch {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item1ch {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item4ch {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+}
+
+.grid-container-sort {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-flow: column;
+}
+
+.grid-item:nth-child(odd) {
+    background: #666;
+}
+
+.grid-item:nth-child(even) {
+    background: #4b4949;
+}
+.grid-item-area:nth-child(odd) {
+    background: #666;
+}
+
+.grid-item-area:nth-child(even) {
+    background: #4b4949;
+}
+
+.grid-container-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 150px 350px 40px;
+    grid-template-areas:
+        "header header header header"
+        "main main main sidebar"
+        "footer footer footer sidebar";
+}
+
+.item1-area {grid-area: header; border: 2px solid rgb(179, 166, 58);}
+
+.item2-area {grid-area: main; border: 2px solid rgb(179, 166, 58);}
+
+.item3-area {grid-area: sidebar; border: 2px solid rgb(179, 166, 58);}
+
+.item4-area {grid-area: footer; border: 2px solid rgb(179, 166, 58);}
+
+@media screen and (max-width: 900px){
+    .grid-container-area{
+        grid-template-rows: 150px 150px 300px 50px;
+        grid-template-areas:
+        "header header header header"
+        "sidebar sidebar sidebar sidebar"
+        "main main main main"
+        "footer footer footer footer";
+    }
+}
+/*cssgrid раздел*/
