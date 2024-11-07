@@ -1,3 +1,4 @@
+
 body {
     background-color: #e4a67d;
     font-family: 'Tenor Sans', sans-serif;
@@ -482,4 +483,57 @@ a.mlink:visited {
         "footer footer footer footer";
     }
 }
+.wh{
+    width: 150px;
+    height: 200px;
+    background-color: #999;
+    overflow: auto
+}
+.wh2{
+    max-width: 600px;
+    max-height: 100px;
+    min-width: 400px;
+    background-color: #999;
+}
+.content-box {
+    box-sizing: content-box;
+    margin: 10px;
+    padding: 15px;
+    border: 5px solid black;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(187, 70, 70);
+}
+.border-box {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 15px;
+    border: 5px solid black;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(46, 157 , 70);
+}
+.box-inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    box-sizing:content-box;
+    width: 33%;
+    border: 5px solid black;
+    height: 250px;
+    background-color: rgb(18, 127, 190);
+}
+.box-inner2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box5{
+    box-sizing: border-box;
+    width: 33%;
+    border: 5px solid black;
+    height: 250px;
+    background-color: rgb(18, 127, 190);
+}
+
 /*cssgrid раздел*/

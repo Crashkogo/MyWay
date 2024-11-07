@@ -35,333 +35,333 @@
                     <li><a class="mlink" href="#">12.JS Libs</a></li>
                     <li><a class="mlink" href="#">13.Sh Gulp</a></li>
                     <li><a class="mlink" href="#">14.Vue</a></li>
-                    
+
                 </ul>
             </div>
         </div>
     </header>
     <main>
-        <p>Решил выделить под grid отдельную страничку. В курсе предоставлен справочник по технологии, буду использовать
-            его. ->><a class="mlink" href="https://morphismail.github.io/css-grid-manual/">ТЫК</a><<- </p>
-                <button class="accordion">Начальные понятия CSS-GRID</button>
-                <div class="panel">
-                    <div class="items">
-                        <div class="item">
-                            <table class="csstable" border="1">
-                                <tr>
-                                    <td>
-                                        Технология grid используется для дочерних элементов grid контейнера. Мы
-                                        применяем свойство к верхнему элементу внутри которого лежат элементы которыми
-                                        мы хотим управлять.
-                                    </td>
-                                    <td>
-                                        <b>HTML:</b><br>
-                                        <code>&ltdiv class="grid-container"&gt<br>
+        <button class="accordion">Начальные понятия CSS-GRID</button>
+        <div class="panel">
+            <div class="items">
+                <div class="item">
+                    <table class="csstable" border="1">
+                        <tr>
+                            <td>
+                                Технология grid используется для дочерних элементов grid контейнера. Мы
+                                применяем свойство к верхнему элементу внутри которого лежат элементы которыми
+                                мы хотим управлять.
+                            </td>
+                            <td>
+                                <b>HTML:</b><br>
+                                <code>&ltdiv class="grid-container"&gt<br>
                                             &ltdiv class="item"&gt<br>
                                             &ltdiv class="item"&gt<br>
                                             &ltdiv class="item"&gt<br>
                                             &lt/div&gt</code><br>
-                                        <b>CSS:</b><br>
-                                        <code>
+                                <b>CSS:</b><br>
+                                <code>
                                                 .grid-container{<br>
                                                     display: grid;<br>
                                                 }
                                             </code>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Линия сетки. Линии бывают как линии колонки так и линии
-                                        строки. Линия идёт слева на право или сверху вниз и отсчёт начинается с 1.
-                                    </td>
-                                    <td>
-                                        <table class="cssgridm" border="1">
-                                            <tr>
-                                                <td>
-                                                    ↑ Первая горизонтальная<br>
-                                                    ← Первая вертикальная
-                                                </td>
-                                                <td>
-                                                    2
-                                                </td>
-                                                <td>
-                                                    3
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    ↑ Вторая горизонтальная<br>
-                                                    Вторая вертикальная →
-                                                </td>
-                                                <td>
-                                                    5
-                                                </td>
-                                                <td>
-                                                    6
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Трек сетки. Это пространство между двумя линиями. Как
-                                        горизонтальными так и вертикальными.
-                                    </td>
-                                    <td>
-                                        <table class="cssgridm" border="1">
-                                            <tr>
-                                                <td class="gridtrack">1</td>
-                                                <td class="gridtrack">2</td>
-                                                <td class="gridtrack">3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>5</td>
-                                                <td>6</td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Ячейка сетки - отдельная единица изммерения сетки. Находится между двумя
-                                        соседними линями строк и столбцов</td>
-                                    <td>
-                                        <table class="cssgridm" border="1">
-                                            <tr>
-                                                <td>1</td>
-                                                <td class="gridtrack">2</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>5</td>
-                                                <td>6</td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Область сетки - любое пространство из нескольких ячеек рядом</td>
-                                    <td>
-                                        <table class="cssgridm" border="1">
-                                            <tr>
-                                                <td class="gridtrack">1</td>
-                                                <td class="gridtrack">2</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="gridtrack">4</td>
-                                                <td class="gridtrack">5</td>
-                                                <td>6</td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Линия сетки. Линии бывают как линии колонки так и линии
+                                строки. Линия идёт слева на право или сверху вниз и отсчёт начинается с 1.
+                            </td>
+                            <td>
+                                <table class="cssgridm" border="1">
+                                    <tr>
+                                        <td>
+                                            ↑ Первая горизонтальная<br>
+                                            ← Первая вертикальная
+                                        </td>
+                                        <td>
+                                            2
+                                        </td>
+                                        <td>
+                                            3
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            ↑ Вторая горизонтальная<br>
+                                            Вторая вертикальная →
+                                        </td>
+                                        <td>
+                                            5
+                                        </td>
+                                        <td>
+                                            6
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Трек сетки. Это пространство между двумя линиями. Как
+                                горизонтальными так и вертикальными.
+                            </td>
+                            <td>
+                                <table class="cssgridm" border="1">
+                                    <tr>
+                                        <td class="gridtrack">1</td>
+                                        <td class="gridtrack">2</td>
+                                        <td class="gridtrack">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ячейка сетки - отдельная единица изммерения сетки. Находится между двумя
+                                соседними линями строк и столбцов</td>
+                            <td>
+                                <table class="cssgridm" border="1">
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="gridtrack">2</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Область сетки - любое пространство из нескольких ячеек рядом</td>
+                            <td>
+                                <table class="cssgridm" border="1">
+                                    <tr>
+                                        <td class="gridtrack">1</td>
+                                        <td class="gridtrack">2</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gridtrack">4</td>
+                                        <td class="gridtrack">5</td>
+                                        <td>6</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-                <button class="accordion">Схема устройства grid контейнера из справочника</button>
-                <div class="panel">
-                    <div class="items">
-                        <div class="item">
+            </div>
+        </div>
+        <button class="accordion">Схема устройства grid контейнера из справочника</button>
+        <div class="panel">
+            <div class="items">
+                <div class="item">
+                    <p>Сам справочник ->><a class="mlink"
+                            href="https://morphismail.github.io/css-grid-manual/">ТЫК</a><<- </p>
                             <img src="img/css-grid.png" alt="css-grid">
-                        </div>
+                </div>
+            </div>
+        </div>
+        <button class="accordion">Практика CSS-GRID</button>
+        <div class="panel">
+            <div class="items">
+                <div class="item">
+                    тут мы указываем свойства <code>display: grid;<br>
+                            grid-template-colums: 100px 100px 100px; <br></code>
+                    Получаем 3 столбца по 100 пикселей, остальное пространство при этом не заполняется
+                </div>
+                <div class="item">
+                    <div class="grid-container-px">
+                        <div class="grid-item item1">1</div>
+                        <div class="grid-item item2">2</div>
+                        <div class="grid-item item3">3</div>
+                        <div class="grid-item item4">4</div>
+                        <div class="grid-item item5">5</div>
+                        <div class="grid-item item6">6</div>
+                        <div class="grid-item item7">7</div>
+                        <div class="grid-item item8">8</div>
+                        <div class="grid-item item9">9</div>
                     </div>
                 </div>
-                <button class="accordion">Практика CSS-GRID</button>
-                <div class="panel">
-                    <div class="items">
-                        <div class="item">
-                            тут мы указываем свойства <code>display: grid;<br>
-                            grid-template-colums: 100px 100px 100px; <br></code>
-                            Получаем 3 столбца по 100 пикселей, остальное пространство при этом не заполняется
-                        </div>
-                        <div class="item">
-                            <div class="grid-container-px">
-                                <div class="grid-item item1">1</div>
-                                <div class="grid-item item2">2</div>
-                                <div class="grid-item item3">3</div>
-                                <div class="grid-item item4">4</div>
-                                <div class="grid-item item5">5</div>
-                                <div class="grid-item item6">6</div>
-                                <div class="grid-item item7">7</div>
-                                <div class="grid-item item8">8</div>
-                                <div class="grid-item item9">9</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="items">
-                        <div class="item">
-                            тут мы указываем свойства <code>display: grid;<br>
+            </div>
+            <div class="items">
+                <div class="item">
+                    тут мы указываем свойства <code>display: grid;<br>
                             grid-template-colums: 30% 30% 30%; <br></code>
-                            Получаем 3 столбца по 30% для каждого из элементов
-                        </div>
-                        <div class="item">
-                            <div class="grid-container-percent">
-                                <div class="grid-item item1">1</div>
-                                <div class="grid-item item2">2</div>
-                                <div class="grid-item item3">3</div>
-                                <div class="grid-item item4">4</div>
-                                <div class="grid-item item5">5</div>
-                                <div class="grid-item item6">6</div>
-                                <div class="grid-item item7">7</div>
-                                <div class="grid-item item8">8</div>
-                                <div class="grid-item item9">9</div>
-                            </div>
-                        </div>
+                    Получаем 3 столбца по 30% для каждого из элементов
+                </div>
+                <div class="item">
+                    <div class="grid-container-percent">
+                        <div class="grid-item item1">1</div>
+                        <div class="grid-item item2">2</div>
+                        <div class="grid-item item3">3</div>
+                        <div class="grid-item item4">4</div>
+                        <div class="grid-item item5">5</div>
+                        <div class="grid-item item6">6</div>
+                        <div class="grid-item item7">7</div>
+                        <div class="grid-item item8">8</div>
+                        <div class="grid-item item9">9</div>
                     </div>
-                    <div class="items">
-                        <div class="item">
-                            тут мы указываем свойства <code>display: grid;<br>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item">
+                    тут мы указываем свойства <code>display: grid;<br>
                             grid-template-colums: 2fr 1fr 1fr; <br></code>
-                            fr - это фракция свободного пространства. Тут мы получаем 1 столбец на 2 фракции и 2 столбца
-                            по 1, что наглядно видно. Фракции занимают весь объём контейнера. <br>
-                            Фракции можно использовать десятичные 0.5fr и т.п.<br>
-                            Так же укажем тут свойство grid-column-gap: 10px, что является отступом между колонками
-                            шириной в 10 пикселей.<br>
-                            grid-row-gap: 20px; Тоже самое только для строк.
-                        </div>
-                        <div class="item">
-                            <div class="grid-container-fr">
-                                <div class="grid-item item1">1</div>
-                                <div class="grid-item item2">2</div>
-                                <div class="grid-item item3">3</div>
-                                <div class="grid-item item4">4</div>
-                                <div class="grid-item item5">5</div>
-                                <div class="grid-item item6">6</div>
-                                <div class="grid-item item7">7</div>
-                                <div class="grid-item item8">8</div>
-                                <div class="grid-item item9">9</div>
-                            </div>
-                        </div>
+                    fr - это фракция свободного пространства. Тут мы получаем 1 столбец на 2 фракции и 2 столбца
+                    по 1, что наглядно видно. Фракции занимают весь объём контейнера. <br>
+                    Фракции можно использовать десятичные 0.5fr и т.п.<br>
+                    Так же укажем тут свойство grid-column-gap: 10px, что является отступом между колонками
+                    шириной в 10 пикселей.<br>
+                    grid-row-gap: 20px; Тоже самое только для строк.
+                </div>
+                <div class="item">
+                    <div class="grid-container-fr">
+                        <div class="grid-item item1">1</div>
+                        <div class="grid-item item2">2</div>
+                        <div class="grid-item item3">3</div>
+                        <div class="grid-item item4">4</div>
+                        <div class="grid-item item5">5</div>
+                        <div class="grid-item item6">6</div>
+                        <div class="grid-item item7">7</div>
+                        <div class="grid-item item8">8</div>
+                        <div class="grid-item item9">9</div>
                     </div>
-                    <div class="items">
-                        <div class="item">
-                            тут мы указываем свойства <code>display: grid;<br>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item">
+                    тут мы указываем свойства <code>display: grid;<br>
                             grid-template-colums: repeat(2,0.5fr 2fr ); <br></code>
-                            repeat() функция повторения. Конкретно тут мы используеся двойное повторение двух значений
-                            фракций<br>
-                            Так же можно использовать функцию minmax() внутри функции повторения. например если указать
-                            repeat(3,minmax(150px,1fr)), тогда при изменении размера окна браузера минимальный размер
-                            ячейки будет 150 пикселей, а максимальый 1 занимаемая фракция.
+                    repeat() функция повторения. Конкретно тут мы используеся двойное повторение двух значений
+                    фракций<br>
+                    Так же можно использовать функцию minmax() внутри функции повторения. например если указать
+                    repeat(3,minmax(150px,1fr)), тогда при изменении размера окна браузера минимальный размер
+                    ячейки будет 150 пикселей, а максимальый 1 занимаемая фракция.
 
-                        </div>
-                        <div class="item">
-                            <div class="grid-container-re">
-                                <div class="grid-item item1">1</div>
-                                <div class="grid-item item2">2</div>
-                                <div class="grid-item item3">3</div>
-                                <div class="grid-item item4">4</div>
-                                <div class="grid-item item5">5</div>
-                                <div class="grid-item item6">6</div>
-                                <div class="grid-item item7">7</div>
-                                <div class="grid-item item8">8</div>
-                                <div class="grid-item item9">9</div>
-                            </div>
-                        </div>
+                </div>
+                <div class="item">
+                    <div class="grid-container-re">
+                        <div class="grid-item item1">1</div>
+                        <div class="grid-item item2">2</div>
+                        <div class="grid-item item3">3</div>
+                        <div class="grid-item item4">4</div>
+                        <div class="grid-item item5">5</div>
+                        <div class="grid-item item6">6</div>
+                        <div class="grid-item item7">7</div>
+                        <div class="grid-item item8">8</div>
+                        <div class="grid-item item9">9</div>
                     </div>
-                    <div class="items">
-                        <div class="item">
-                            тут мы указываем свойства <code>display: grid;<br>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item">
+                    тут мы указываем свойства <code>display: grid;<br>
                             grid-template-colums: repeat(auto-fit,minmax(300px,1fr)); <br></code>
-                            Тут мы вместо количества повторений указываем свойство auto-fit, что при использовании
-                            функции minmax() позволяет элементам переходить на новую строку, а не активировать полосу
-                            прокрутки в браузере<br>
-                        </div>
-                        <div class="item">
-                            <div class="grid-container-afit">
-                                <div class="grid-item item1">1</div>
-                                <div class="grid-item item2">2</div>
-                                <div class="grid-item item3">3</div>
-                                <div class="grid-item item4">4</div>
-                                <div class="grid-item item5">5</div>
-                                <div class="grid-item item6">6</div>
-                                <div class="grid-item item7">7</div>
-                                <div class="grid-item item8">8</div>
-                                <div class="grid-item item9">9</div>
-                            </div>
-                        </div>
+                    Тут мы вместо количества повторений указываем свойство auto-fit, что при использовании
+                    функции minmax() позволяет элементам переходить на новую строку, а не активировать полосу
+                    прокрутки в браузере<br>
+                </div>
+                <div class="item">
+                    <div class="grid-container-afit">
+                        <div class="grid-item item1">1</div>
+                        <div class="grid-item item2">2</div>
+                        <div class="grid-item item3">3</div>
+                        <div class="grid-item item4">4</div>
+                        <div class="grid-item item5">5</div>
+                        <div class="grid-item item6">6</div>
+                        <div class="grid-item item7">7</div>
+                        <div class="grid-item item8">8</div>
+                        <div class="grid-item item9">9</div>
                     </div>
-                    <div class="items">
-                        <div class="item">
-                            тут мы указываем свойства <code>display: grid;<br>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item">
+                    тут мы указываем свойства <code>display: grid;<br>
                             grid-template-colums: 1fr 1fr 1fr; <br>
                             grid-template-rows: 100px 50px 25px <br></code>
-                            Всё тоже самое мы можем указать и для строк <br>
-                        </div>
-                        <div class="item">
-                            <div class="grid-container-row">
-                                <div class="grid-item item1">1</div>
-                                <div class="grid-item item2">2</div>
-                                <div class="grid-item item3">3</div>
-                                <div class="grid-item item4">4</div>
-                                <div class="grid-item item5">5</div>
-                                <div class="grid-item item6">6</div>
-                                <div class="grid-item item7">7</div>
-                                <div class="grid-item item8">8</div>
-                                <div class="grid-item item9">9</div>
-                            </div>
-                        </div>
+                    Всё тоже самое мы можем указать и для строк <br>
+                </div>
+                <div class="item">
+                    <div class="grid-container-row">
+                        <div class="grid-item item1">1</div>
+                        <div class="grid-item item2">2</div>
+                        <div class="grid-item item3">3</div>
+                        <div class="grid-item item4">4</div>
+                        <div class="grid-item item5">5</div>
+                        <div class="grid-item item6">6</div>
+                        <div class="grid-item item7">7</div>
+                        <div class="grid-item item8">8</div>
+                        <div class="grid-item item9">9</div>
                     </div>
-                    <div class="items">
-                        <div class="item">
-                            Далее рассмотрим свойства применяемые к дочерним элементам. Т.е. к контейнерам которые
-                            находятся внутри контейнера к которому применили основное grid свойство. <br>
-                            Тут мы к первому элементу применяем свойства:<br>
-                            grid-column-start: 1;<br>
-                            grid-column-end: 3;<br>
-                            И справа видим, что первый элемент начинается с 1 линии и заканчивается третьей.<br>
-                            К 4 элементу мы применили свойство grid-column-end: span 3. Тем самым указали, что 4 ячейка
-                            должна занимать все 3 свободных пространства
-                        </div>
-                        <div class="item">
-                            <div class="grid-container-ch">
-                                <div class="grid-item item1ch">1</div>
-                                <div class="grid-item item2ch">2</div>
-                                <div class="grid-item item3ch">3</div>
-                                <div class="grid-item item4ch">4</div>
-                                <div class="grid-item item5ch">5</div>
-                                <div class="grid-item item6ch">6</div>
-                                <div class="grid-item item7ch">7</div>
-                                <div class="grid-item item8ch">8</div>
-                                <div class="grid-item item9ch">9</div>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item">
+                    Далее рассмотрим свойства применяемые к дочерним элементам. Т.е. к контейнерам которые
+                    находятся внутри контейнера к которому применили основное grid свойство. <br>
+                    Тут мы к первому элементу применяем свойства:<br>
+                    grid-column-start: 1;<br>
+                    grid-column-end: 3;<br>
+                    И справа видим, что первый элемент начинается с 1 линии и заканчивается третьей.<br>
+                    К 4 элементу мы применили свойство grid-column-end: span 3. Тем самым указали, что 4 ячейка
+                    должна занимать все 3 свободных пространства
+                </div>
+                <div class="item">
+                    <div class="grid-container-ch">
+                        <div class="grid-item item1ch">1</div>
+                        <div class="grid-item item2ch">2</div>
+                        <div class="grid-item item3ch">3</div>
+                        <div class="grid-item item4ch">4</div>
+                        <div class="grid-item item5ch">5</div>
+                        <div class="grid-item item6ch">6</div>
+                        <div class="grid-item item7ch">7</div>
+                        <div class="grid-item item8ch">8</div>
+                        <div class="grid-item item9ch">9</div>
                     </div>
-                    <div class="items">
-                        <div class="item">
-                            Рассмотрим свойство сортировки ячеек grid-auto-flow: ... <br>
-                            По умолчанию у него значение row, что значит строчную сортировку слева на право.<br>
-                            Второе значение column, что делает сортировку сверху вниз как видно на примере.
-                        </div>
-                        <div class="item">
-                            <div class="grid-container-sort">
-                                <div class="grid-item item1">1</div>
-                                <div class="grid-item item2">2</div>
-                                <div class="grid-item item3">3</div>
-                                <div class="grid-item item4">4</div>
-                                <div class="grid-item item5">5</div>
-                                <div class="grid-item item6">6</div>
-                                <div class="grid-item item7">7</div>
-                                <div class="grid-item item8">8</div>
-                                <div class="grid-item item9">9</div>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item">
+                    Рассмотрим свойство сортировки ячеек grid-auto-flow: ... <br>
+                    По умолчанию у него значение row, что значит строчную сортировку слева на право.<br>
+                    Второе значение column, что делает сортировку сверху вниз как видно на примере.
+                </div>
+                <div class="item">
+                    <div class="grid-container-sort">
+                        <div class="grid-item item1">1</div>
+                        <div class="grid-item item2">2</div>
+                        <div class="grid-item item3">3</div>
+                        <div class="grid-item item4">4</div>
+                        <div class="grid-item item5">5</div>
+                        <div class="grid-item item6">6</div>
+                        <div class="grid-item item7">7</div>
+                        <div class="grid-item item8">8</div>
+                        <div class="grid-item item9">9</div>
                     </div>
-                    <div class="items">
-                        <div class="item">
-                            При использовании grid area задаём имена областям внутри основного контейнера. Например:<br>
-                            .item1-area{grid-area: header}<br>
-                            После создания имён, мы можем использовать свойство:<br>
-                            grid-templates-areas:<br>
-                            "header header header header"<br>
-                            "main main main sidebar"<br>
-                            "footer footer footer sidebar"<br>
-                            На примере видно, что мы как бы "графически" изображаем область как распологаются наши
-                            дочернии контейнеры которым мы дали названия.<br>
-                            Далее добавим медиа запрос к нашей области.<br><code>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item">
+                    При использовании grid area задаём имена областям внутри основного контейнера. Например:<br>
+                    .item1-area{grid-area: header}<br>
+                    После создания имён, мы можем использовать свойство:<br>
+                    grid-templates-areas:<br>
+                    "header header header header"<br>
+                    "main main main sidebar"<br>
+                    "footer footer footer sidebar"<br>
+                    На примере видно, что мы как бы "графически" изображаем область как распологаются наши
+                    дочернии контейнеры которым мы дали названия.<br>
+                    Далее добавим медиа запрос к нашей области.<br><code>
                             @media screen and (max-width: 900px){<br>
                            .grid-container-area{<br>
                             grid-template-rows: 150px 150px 300px 50px;<br>
@@ -372,28 +372,156 @@
                             "footer footer footer footer";<br>
                             }<br>
                             }<br></code>
-                            И если мы сузим страничку браузера, наши области встанут друг под другом как прописано в
-                            этих медиая свойствах. таким образом делаем адаптивную вёрстку при помощи grid.
-                        </div>
-                        <div class="item">
-                            <div class="grid-container-area">
-                                <div class="grid-item-area item1-area">H</div>
-                                <div class="grid-item-area item2-area">M</div>
-                                <div class="grid-item-area item3-area">S</div>
-                                <div class="grid-item-area item4-area">F</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="items">
-                        <div class="item">
-                            Далее в курсе рассказывается про выравнивания. Но они работают так же как и при использовании флексбоксов. Синтаксис можно посмотреть в справочнике.<br>
-                            Из того, что нужно запомнить так это саму возможность выравнивать элементы в общем контейнере так и выравнивание контента внутри самой ячейки области.
-                        </div>
-                
+                    И если мы сузим страничку браузера, наши области встанут друг под другом как прописано в
+                    этих медиая свойствах. таким образом делаем адаптивную вёрстку при помощи grid.
+                </div>
+                <div class="item">
+                    <div class="grid-container-area">
+                        <div class="grid-item-area item1-area">H</div>
+                        <div class="grid-item-area item2-area">M</div>
+                        <div class="grid-item-area item3-area">S</div>
+                        <div class="grid-item-area item4-area">F</div>
                     </div>
                 </div>
-                
-                <script src="script.js"></script>
+            </div>
+            <div class="items">
+                <div class="item">
+                    Далее в курсе рассказывается про выравнивания. Но они работают так же как и при использовании
+                    флексбоксов. Синтаксис можно посмотреть в справочнике.<br>
+                    Из того, что нужно запомнить так это саму возможность выравнивать элементы в общем контейнере так и
+                    выравнивание контента внутри самой ячейки области.
+                </div>
+
+            </div>
+        </div>
+        <button class="accordion">Размеры элементов</button>
+        <div class="panel">
+            <div class="items">
+                <div class="item">
+                    <div class="wh">width - ширина<br>height - высота<br>Для наглядности ещё задаём background-color<br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, laboriosam sequi molestiae
+                        sint at quam minus sit fugit sunt voluptas voluptatum quia magni assumenda, maxime provident.
+                        Molestias officiis iusto similique.</div>
+                </div>
+                <div class="item">
+                    <code>
+                        . wh { <br>
+                            width: 150px; /* Устанавливаем ширину элемента 150 пикселей */ <br>
+                            height: 200px; /* Устанавливаем высоту элемента 200 пикселей */ <br>
+                            background-color: #999; /* Устанавливаем цвет фона элемента серым (#999) */ <br>
+                            overflow: auto; /* Добавляем прокрутку, если содержимое выходит за границы элемента */ <br>
+                        } <br>
+                        </code>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <div class="wh2">Тут я установил максимальную и минимальную ширину для наглядности<br>Блок не ушел
+                        дальше 600 пикселей, но сделать экран меньше он не уменьшится меньше 400.<br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, laboriosam sequi molestiae
+                        sint at quam minus sit fugit sunt voluptas voluptatum quia magni assumenda, maxime provident.
+                        Molestias officiis iusto similique.</div>
+                </div>
+                <div class="item">
+                    <code>
+                        . wh2 { <br>
+                            max-width: 600px; /* Устанавливаем максимальную ширину элемента 600 пикселей */ <br>
+                            max-height: 100px; /* Устанавливаем максимальную высоту элемента 100 пикселей */ <br>
+                            min-width: 400px; /* Устанавливаем минимальную ширину элемента 400 пикселей */ <br>
+                            background-color: #999; /* Устанавливаем цвет фона элемента серым (#999) */ <br>
+                        } <br>
+                        </code>
+                </div>
+            </div>
+        </div>
+        <button class="accordion">CSS box-sizing</button>
+        <div class="panel">
+            <div class="items">
+                <div class="item">
+                    <div class="content-box">Content-box</div>
+                    <div class="border-box">Border-box</div>
+                </div>
+                <div class="item">
+                    <code>
+                        . content-box { <br>
+                            box-sizing: content-box; /* Ширина и высота учитывают только содержимое */ <br>
+                            margin: 10px; /* Внешний отступ элемента — 10 пикселей */ <br>
+                            padding: 15px; /* Внутренний отступ элемента — 15 пикселей */ <br>
+                            border: 5px solid black; /* Черная граница толщиной 5 пикселей */ <br>
+                            width: 250px; /* Ширина элемента составляет 250 пикселей (только содержимое) */ <br>
+                            height: 250px; /* Высота элемента составляет 250 пикселей (только содержимое) */ <br>
+                            background-color: rgb(187, 70, 70); /* Цвет фона — темно-красный */ <br>
+                        } <br><br>
+                        
+                        . border-box { <br>
+                            box-sizing: border-box; /* Ширина и высота включают содержимое, отступы и границы */ <br>
+                            margin: 10px; /* Внешний отступ элемента — 10 пикселей */ <br>
+                            padding: 15px; /* Внутренний отступ элемента — 15 пикселей */ <br>
+                            border: 5px solid black; /* Черная граница толщиной 5 пикселей */ <br>
+                            width: 250px; /* Общая ширина элемента — 250 пикселей, включая padding и border */ <br>
+                            height: 250px; /* Общая высота элемента — 250 пикселей, включая padding и border */ <br>
+                            background-color: rgb(46, 157, 70); /* Цвет фона — зеленый */ <br>
+                        } <br>
+                        </code>
+                    Главное отличие в том, что при border-box элемент остаётся заданных размеров и все отступы margin и
+                    padding уходят во внутрь элемента, что позволяет нам точно регулировать размер блока.<br>
+                    Сейчас свойство border-box устанавливают для всех элементов * { box-sizing: border-box;}
+                </div>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <div class="box-inner">
+                        <div class="box">box1</div>
+                        <div class="box">box2</div>
+                        <div class="box">box3</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <code>
+                    . box-inner { <br>
+                        display: flex; /* Устанавливаем flex-контейнер для внутреннего выравнивания */ <br>
+                        flex-wrap: wrap; /* Разрешаем перенос элементов на следующую строку при переполнении */ <br>
+                    } <br><br>
+
+                    . box { <br>
+                        box-sizing: content-box; /* Ширина и высота включают только содержимое */ <br>
+                        width: 33%; /* Устанавливаем ширину элемента на 33% от ширины родителя */ <br>
+                        border: 5px solid black; /* Черная граница толщиной 5 пикселей */ <br>
+                        height: 250px; /* Фиксированная высота элемента — 250 пикселей */ <br>
+                        background-color: rgb(18, 127, 190); /* Цвет фона — синий */ <br>
+                    } <br>
+                    </code>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <div class="box-inner2">
+                        <div class="box5">box1</div>
+                        <div class="box5">box2</div>
+                        <div class="box5">box3</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <code>
+                    . box-inner { <br>
+                        display: flex; /* Устанавливаем flex-контейнер для внутреннего выравнивания */ <br>
+                        flex-wrap: wrap; /* Разрешаем перенос элементов на следующую строку при переполнении */ <br>
+                    } <br><br>
+
+                    . box { <br>
+                        box-sizing: border-box; /* Ширина и высота включают только содержимое */ <br>
+                        width: 33%; /* Устанавливаем ширину элемента на 33% от ширины родителя */ <br>
+                        border: 5px solid black; /* Черная граница толщиной 5 пикселей */ <br>
+                        height: 250px; /* Фиксированная высота элемента — 250 пикселей */ <br>
+                        background-color: rgb(18, 127, 190); /* Цвет фона — синий */ <br>
+                    } <br>
+                    </code>
+                    На этом примере, мы видим, что при flex-wrap и без использования border-box 3 элемента не могут поместиться в 33% размера и один из них съезжает вниз<br>
+                    Но как только свойство border уходит внутрь элемента, наши коробки становятся друг за другом.
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
     </main>
 </body>
 
