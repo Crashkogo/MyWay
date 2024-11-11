@@ -535,5 +535,63 @@ a.mlink:visited {
     height: 250px;
     background-color: rgb(18, 127, 190);
 }
-
+.position_container{
+    background-color: #4b4949;
+}
+.box_position_one{
+    background-color: antiquewhite;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 30px;  /* Смещение элемента вниз на 20 пикселей */
+    left: 50px; /* Смещение элемента вправо на 10 пикселей */
+}
+.box_position_two{
+    background-color: #925a34;
+    width: 150px;
+    height: 150px;
+}
 /*cssgrid раздел*/
+
+.position_container2 {
+    background-color: #4b4949;
+    position: relative;
+}
+.box_position_one2 {
+    background-color: antiquewhite;
+    width: 150px;
+    height: 150px;
+
+}
+.box_position_two2 {
+    background-color: #925a34;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+.position_container3 {
+    background-color: #4b4949;
+    position: relative;
+    width: 600px;
+    height: 300px;
+}
+.box_position_one3 {
+    background-color: antiquewhite;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+.box_position_two3 {
+    background-color: #925a34;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}

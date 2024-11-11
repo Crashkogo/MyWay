@@ -521,6 +521,147 @@
                 </div>
             </div>
         </div>
+        <button class="accordion">Позиционирование в CSS</button>
+        <div class="panel">
+            <div class="items">
+                <div class="item">
+                    CSS-позиционирование позволяет управлять расположением элементов на веб-странице. Ключевое свойство для позиционирования — это position, и в зависимости от его значения поведение элемента меняется. Рассмотрим три важных значения: <b>static, relative, и absolute.</b><br>
+                    Свойство position<br>
+                    Свойство position задает метод позиционирования элемента на странице. Оно определяет, как элемент будет взаимодействовать с другими элементами и как будут применяться дополнительные свойства позиционирования (top, left, right, bottom).
+                </div>
+            </div> 
+            <div class="items">
+                <div class="item">
+                   static - Это значение по умолчанию для всех элементов. Элементы с position: static располагаются в естественном потоке документа (одно за другим), без особого позиционирования.<br>
+                   Свойства top, left, right, bottom не работают с этим значением.
+                </div>
+                <div class="item">
+                    <code>.box {<br>
+                        position: static;<br>
+                        width: 200px;<br>
+                        height: 100px;<br>
+                    }</code><br>
+                Элемент будет отображен в нормальном порядке потока, не изменяя своего положения.
+                </div>  
+            </div>
+            <div class="items">
+                <div class="item">
+                    relative (относительное позиционирование):<br>
+                    Элемент с position: relative остается в потоке документа, но его можно смещать относительно собственного исходного положения, используя свойства top, left, right, и bottom.<br>
+                    Свойства top, left, right, bottom смещают элемент от его начальной позиции, не затрагивая других элементов, оставшихся на своих местах.<br>
+                   
+                </div>
+                <div class="item">
+                     <div class="position_container">
+                        <div class="box_position_one">box1</div>
+                        <div class="box_position_two">box2</div>
+                    </div>
+                    <code>.box {<br>
+                        position: relative;<br>
+                        top: 20px;  /* Смещение элемента вниз на 20 пикселей */<br>
+                        left: 10px; /* Смещение элемента вправо на 10 пикселей */<br>
+                    }</code><br>
+                </div>  
+            </div> 
+            <div class="items">
+                <div class="item">
+                    absolute (абсолютное позиционирование):<br>
+                    Описание: Элемент с position: absolute удаляется из обычного потока документа и позиционируется относительно ближайшего предка с position: relative, absolute или fixed. Если таких предков нет, он позиционируется относительно страницы (краев окна).<br>
+                    Свойства top, left, right, bottom задают точное положение элемента относительно его содержащего блока.
+                </div>
+                <div class="item">
+                    <div class="position_container2">
+                        <div class="box_position_one2">box1</div>
+                        <div class="box_position_two2">box2</div>
+                    </div>
+                    Box2 - сместился в верхний левый угол (отодвинул от края для наглядности). Т.к. для контейнера мы присвоили свойство <code>position:relative</code><br>
+                    <code>
+                        .position_container2 {<br>
+                            position: relative;<br>
+                        }<br>
+                        .box_position_two2 {<br>
+                            background-color: #925a34;<br>
+                            width: 50px;<br>
+                            height: 50px;<br>
+                            position: absolute;<br>
+                            top: 0;<br>
+                            left: 30px;<br>
+                        }<br>
+                    </code>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item">
+                    z-index управляет порядком наложения элементов на странице, то есть какой элемент будет отображаться сверху при наложении.<br>
+                    Работает только для элементов с position отличным от static. <br>
+                   Чем выше значение z-index, тем ближе элемент будет к переднему плану.
+                </div>
+                <div class="item">
+                    <div class="position_container3">
+                        <div class="box_position_one3">box1</div>
+                        <div class="box_position_two3">box2</div>
+                    </div>
+                    box2 ушел под объект box1 благодаря значению z-index.
+                    .position_container3 {<br>
+                        background-color: #4b4949;<br>
+                        position: relative;<br>
+                    }<br>
+                    .box_position_one3 {<br>
+                        position: absolute;<br>
+                        top: 10px;<br>
+                        left: 10px;<br>
+                        z-index: 2;<br>
+                    }<br>
+                    .box_position_two3 {<br>
+                        position: absolute;<br>
+                        top: 20px;<br>
+                        left: 20px;<br>
+                        z-index: 1;<br>
+                    }<br>
+                </div>  
+            </div>
+            <div class="items">
+                <div class="item">
+                    fixed (фиксированное позиционирование):<br>
+                    Описание: Элемент с position: fixed фиксируется относительно окна браузера и остается в одном и том же месте при прокрутке страницы. <br>
+                    Свойства top, left, right, bottom устанавливают фиксированное положение элемента внутри окна. <br>  
+                </div>
+                <div class="item">
+                    <a href="pexample/index.html" target="_blank">Пример на новой странице тут.</a><br>
+                    <code>.menu{<br>
+                        position: fixed;<br>
+                        right: 0;<br>
+                        top: 0;<br>
+                        left: 0;<br>
+                    }<br></code>
+                    Так же в этом примере  важно отодвинуть всю часть контента на размер фиксируемого блока. <br>
+                    <code>
+                        .content{<br>
+                            padding-top: 80px;<br>
+                        }
+                    </code>
+                </div>  
+            </div>
+            <div class="items">
+                <div class="item">
+                    sticky (липкое позиционирование): <br>
+                    Описание: Элемент с position: sticky ведет себя как relative до тех пор, пока не пересечет определенный порог (например, верхнюю границу окна), после чего становится фиксированным на месте. <br>
+                    Свойства top, left, right, bottom указывают точку, в которой элемент "прилипает" к странице. <br>
+                </div>
+                <div class="item">
+                    <a href="pexample/indexsticky.html" target="_blank">Пример на новой странице тут.</a><br>
+                    <code>
+                        .menu2{<br>
+                            position: sticky;<br>
+                            top: 0;<br>
+                        } <br>
+                    </code>
+                   Пример, где несколько элементов прилипают друг к краю страницы, но когда прилипает новый элемент - прошлый скрывается.<br>
+                   В уроке сказано, что для того, чтобы один элемент не залазил на другой, а как бы уходил за пределы страницы используется дополнительная div обёртка для дочерних элементов которым мы и устанавливаем значение sticky.
+                    <a href="pexample/indexex.html" target="_blank">Пример на новой странице тут.</a>
+                </div>  
+            </div>                       
+        </div>
         <script src="script.js"></script>
     </main>
 </body>
