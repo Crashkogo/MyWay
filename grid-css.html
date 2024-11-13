@@ -516,7 +516,8 @@
                         background-color: rgb(18, 127, 190); /* Цвет фона — синий */ <br>
                     } <br>
                     </code>
-                    На этом примере, мы видим, что при flex-wrap и без использования border-box 3 элемента не могут поместиться в 33% размера и один из них съезжает вниз<br>
+                    На этом примере, мы видим, что при flex-wrap и без использования border-box 3 элемента не могут
+                    поместиться в 33% размера и один из них съезжает вниз<br>
                     Но как только свойство border уходит внутрь элемента, наши коробки становятся друг за другом.
                 </div>
             </div>
@@ -525,15 +526,20 @@
         <div class="panel">
             <div class="items">
                 <div class="item">
-                    CSS-позиционирование позволяет управлять расположением элементов на веб-странице. Ключевое свойство для позиционирования — это position, и в зависимости от его значения поведение элемента меняется. Рассмотрим три важных значения: <b>static, relative, и absolute.</b><br>
+                    CSS-позиционирование позволяет управлять расположением элементов на веб-странице. Ключевое свойство
+                    для позиционирования — это position, и в зависимости от его значения поведение элемента меняется.
+                    Рассмотрим три важных значения: <b>static, relative, и absolute.</b><br>
                     Свойство position<br>
-                    Свойство position задает метод позиционирования элемента на странице. Оно определяет, как элемент будет взаимодействовать с другими элементами и как будут применяться дополнительные свойства позиционирования (top, left, right, bottom).
+                    Свойство position задает метод позиционирования элемента на странице. Оно определяет, как элемент
+                    будет взаимодействовать с другими элементами и как будут применяться дополнительные свойства
+                    позиционирования (top, left, right, bottom).
                 </div>
-            </div> 
+            </div>
             <div class="items">
                 <div class="item">
-                   static - Это значение по умолчанию для всех элементов. Элементы с position: static располагаются в естественном потоке документа (одно за другим), без особого позиционирования.<br>
-                   Свойства top, left, right, bottom не работают с этим значением.
+                    static - Это значение по умолчанию для всех элементов. Элементы с position: static располагаются в
+                    естественном потоке документа (одно за другим), без особого позиционирования.<br>
+                    Свойства top, left, right, bottom не работают с этим значением.
                 </div>
                 <div class="item">
                     <code>.box {<br>
@@ -541,18 +547,20 @@
                         width: 200px;<br>
                         height: 100px;<br>
                     }</code><br>
-                Элемент будет отображен в нормальном порядке потока, не изменяя своего положения.
-                </div>  
+                    Элемент будет отображен в нормальном порядке потока, не изменяя своего положения.
+                </div>
             </div>
             <div class="items">
                 <div class="item">
                     relative (относительное позиционирование):<br>
-                    Элемент с position: relative остается в потоке документа, но его можно смещать относительно собственного исходного положения, используя свойства top, left, right, и bottom.<br>
-                    Свойства top, left, right, bottom смещают элемент от его начальной позиции, не затрагивая других элементов, оставшихся на своих местах.<br>
-                   
+                    Элемент с position: relative остается в потоке документа, но его можно смещать относительно
+                    собственного исходного положения, используя свойства top, left, right, и bottom.<br>
+                    Свойства top, left, right, bottom смещают элемент от его начальной позиции, не затрагивая других
+                    элементов, оставшихся на своих местах.<br>
+
                 </div>
                 <div class="item">
-                     <div class="position_container">
+                    <div class="position_container">
                         <div class="box_position_one">box1</div>
                         <div class="box_position_two">box2</div>
                     </div>
@@ -561,20 +569,24 @@
                         top: 20px;  /* Смещение элемента вниз на 20 пикселей */<br>
                         left: 10px; /* Смещение элемента вправо на 10 пикселей */<br>
                     }</code><br>
-                </div>  
-            </div> 
+                </div>
+            </div>
             <div class="items">
                 <div class="item">
                     absolute (абсолютное позиционирование):<br>
-                    Описание: Элемент с position: absolute удаляется из обычного потока документа и позиционируется относительно ближайшего предка с position: relative, absolute или fixed. Если таких предков нет, он позиционируется относительно страницы (краев окна).<br>
-                    Свойства top, left, right, bottom задают точное положение элемента относительно его содержащего блока.
+                    Описание: Элемент с position: absolute удаляется из обычного потока документа и позиционируется
+                    относительно ближайшего предка с position: relative, absolute или fixed. Если таких предков нет, он
+                    позиционируется относительно страницы (краев окна).<br>
+                    Свойства top, left, right, bottom задают точное положение элемента относительно его содержащего
+                    блока.
                 </div>
                 <div class="item">
                     <div class="position_container2">
                         <div class="box_position_one2">box1</div>
                         <div class="box_position_two2">box2</div>
                     </div>
-                    Box2 - сместился в верхний левый угол (отодвинул от края для наглядности). Т.к. для контейнера мы присвоили свойство <code>position:relative</code><br>
+                    Box2 - сместился в верхний левый угол (отодвинул от края для наглядности). Т.к. для контейнера мы
+                    присвоили свойство <code>position:relative</code><br>
                     <code>
                         .position_container2 {<br>
                             position: relative;<br>
@@ -592,9 +604,10 @@
             </div>
             <div class="items">
                 <div class="item">
-                    z-index управляет порядком наложения элементов на странице, то есть какой элемент будет отображаться сверху при наложении.<br>
+                    z-index управляет порядком наложения элементов на странице, то есть какой элемент будет отображаться
+                    сверху при наложении.<br>
                     Работает только для элементов с position отличным от static. <br>
-                   Чем выше значение z-index, тем ближе элемент будет к переднему плану.
+                    Чем выше значение z-index, тем ближе элемент будет к переднему плану.
                 </div>
                 <div class="item">
                     <div class="position_container3">
@@ -603,28 +616,29 @@
                     </div>
                     box2 ушел под объект box1 благодаря значению z-index.
                     .position_container3 {<br>
-                        background-color: #4b4949;<br>
-                        position: relative;<br>
+                    background-color: #4b4949;<br>
+                    position: relative;<br>
                     }<br>
                     .box_position_one3 {<br>
-                        position: absolute;<br>
-                        top: 10px;<br>
-                        left: 10px;<br>
-                        z-index: 2;<br>
+                    position: absolute;<br>
+                    top: 10px;<br>
+                    left: 10px;<br>
+                    z-index: 2;<br>
                     }<br>
                     .box_position_two3 {<br>
-                        position: absolute;<br>
-                        top: 20px;<br>
-                        left: 20px;<br>
-                        z-index: 1;<br>
+                    position: absolute;<br>
+                    top: 20px;<br>
+                    left: 20px;<br>
+                    z-index: 1;<br>
                     }<br>
-                </div>  
+                </div>
             </div>
             <div class="items">
                 <div class="item">
                     fixed (фиксированное позиционирование):<br>
-                    Описание: Элемент с position: fixed фиксируется относительно окна браузера и остается в одном и том же месте при прокрутке страницы. <br>
-                    Свойства top, left, right, bottom устанавливают фиксированное положение элемента внутри окна. <br>  
+                    Описание: Элемент с position: fixed фиксируется относительно окна браузера и остается в одном и том
+                    же месте при прокрутке страницы. <br>
+                    Свойства top, left, right, bottom устанавливают фиксированное положение элемента внутри окна. <br>
                 </div>
                 <div class="item">
                     <a href="pexample/index.html" target="_blank">Пример на новой странице тут.</a><br>
@@ -634,18 +648,20 @@
                         top: 0;<br>
                         left: 0;<br>
                     }<br></code>
-                    Так же в этом примере  важно отодвинуть всю часть контента на размер фиксируемого блока. <br>
+                    Так же в этом примере важно отодвинуть всю часть контента на размер фиксируемого блока. <br>
                     <code>
                         .content{<br>
                             padding-top: 80px;<br>
                         }
                     </code>
-                </div>  
+                </div>
             </div>
             <div class="items">
                 <div class="item">
                     sticky (липкое позиционирование): <br>
-                    Описание: Элемент с position: sticky ведет себя как relative до тех пор, пока не пересечет определенный порог (например, верхнюю границу окна), после чего становится фиксированным на месте. <br>
+                    Описание: Элемент с position: sticky ведет себя как relative до тех пор, пока не пересечет
+                    определенный порог (например, верхнюю границу окна), после чего становится фиксированным на месте.
+                    <br>
                     Свойства top, left, right, bottom указывают точку, в которой элемент "прилипает" к странице. <br>
                 </div>
                 <div class="item">
@@ -656,11 +672,131 @@
                             top: 0;<br>
                         } <br>
                     </code>
-                   Пример, где несколько элементов прилипают друг к краю страницы, но когда прилипает новый элемент - прошлый скрывается.<br>
-                   В уроке сказано, что для того, чтобы один элемент не залазил на другой, а как бы уходил за пределы страницы используется дополнительная div обёртка для дочерних элементов которым мы и устанавливаем значение sticky.
+                    Пример, где несколько элементов прилипают друг к краю страницы, но когда прилипает новый элемент -
+                    прошлый скрывается.<br>
+                    В уроке сказано, что для того, чтобы один элемент не залазил на другой, а как бы уходил за пределы
+                    страницы используется дополнительная div обёртка для дочерних элементов которым мы и устанавливаем
+                    значение sticky.
                     <a href="pexample/indexex.html" target="_blank">Пример на новой странице тут.</a>
+                </div>
+            </div>
+        </div>
+        <button class="accordion">Методология БЭМ</button>
+        <div class="panel">
+            <div class="items">
+                <div class="item">
+                    Писать какие то примеры или определения тут не вижу смысла, это пункт 5.4 в курсе. <br>
+                    Тут оставлю все ссылки из этого урока. <br>
+                    <a href="https://ru.bem.info/methodology/quick-start/" target="_blank">Быстрый старт</a> <br>
+                    <a href="https://ru.bem.info/" target="_blank">Полная документация</a> <br>
+                    <a href="https://github.com/yoksel/common-words" target="_blank">Слова, часто используемые в
+                        CSS-классах</a> <br>
+                    <a href="https://github.com/web-standards-ru/dictionary/blob/main/dictionary.md"
+                        target="_blank">Словарь терминов по фронтенду</a> <br>
+                    <a href="https://github.com/web-standards-ru/dictionary/blob/main/git.md" target="_blank">Словарь
+                        терминов Git и GitHub</a> <br>
+                    <a href="https://github.com/web-standards-ru/dictionary/blob/main/font-weights.md"
+                        target="_blank">Таблица имён насыщенности шрифта</a> <br>
+                    <a href="https://github.com/web-standards-ru/dictionary/blob/main/keyboard.md"
+                        target="_blank">Названия символов на клавиатуре</a>
+                </div>
+            </div>
+        </div>
+        <button class="accordion">margin или padding, Что лучше использовать</button>
+        <div class="panel">
+            <div class="items">
+                <div class="item">
+                    <div class="mp_container">
+                        <div class="mp_item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, vitae
+                            quaerat quibusdam ipsam ea deserunt!</div>
+                        <div class="mp_item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, vitae
+                            quaerat quibusdam ipsam ea deserunt!</div>
+                        <div class="mp_item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, vitae
+                            quaerat quibusdam ipsam ea deserunt!</div>
+                    </div>
+                </div>
+                <div class="item">
+                    Для отделения блоков, следует использовать margin. Тут наглядно видно свойство
+                    <code>margin-right;</code> 15px; и <code>margin-bottom;</code> 10px;. <br>
+                    margin(ы) задаются от предыдущего элемента к следующему, от первого ко второму, сверху вниз, слева направо. <br>
+                    
+                </div>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <div class="mp_container">
+                        _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+                    </div>
+                    <h1 class="mp_h1 h1_class">Lorem ipsum dolor sit amet consectetur.</h1>
+                </div>
+                <div class="item">
+                   Для текста мы используем <code>padding</code>. Для наглядности наш контейнер я расположил над тэгом h1. <br>
+                   В курсе рассказыается, что тэг h1 сам по себе имеет значение padding, поэтому показано как его обнулить.
+                   *{ <br>
+                    margin: 0; <br>
+                    padding: 0; <br>
+                } <br>
+                Таким образом обнуляются все отступы для всех тэгов. Конкретно для этого тэга я двумя классами сначала обнуляю, потом устанавливаю отступы сверху и слева по 15px.
+                </div>
+            </div>
+            <div class="items">
+                <div class="item">
+                   <div class="mp_container2">
+                    <div class="mp_list ">
+                        <div>
+                            <ul class="mp_h1">
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mp_list">
+                        <div>
+                            <ul class="mp_h1">
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mp_list">
+                        <div>
+                            <ul class="mp_h1">
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                <div class="item">
+                    В этом примере демонстрируется большая вложенная структура для формирования списков как пример. <br>
+                    Для указания отступов между элементами, мы задаём отступы для элементов одного уровня в данном случае верхний div контейнер.
                 </div>  
-            </div>                       
+            </div> 
+            <div class="items">
+                <div class="item mp">
+                   <ul class="mp_menu">
+                    <li><a href="#">Link link</a></li>
+                    <li><a href="#">Link link</a></li>
+                    <li><a href="#">Link link</a></li>
+                    <li><a href="#">Link link</a></li>
+                   </ul>
+                   <div class="mp_box">box</div>
+                </div>
+                
+                <div class="item">
+                    При установлении отступов в списке, мы получаем отступ у последнего элемента и для нормального отображения блока мы пользуемся такой конструкцией. <br>
+                    .mp_menu li:last-child{ <br>
+                        margin-right: 0; <br>
+                    } <br>
+                    Мы для последнего элемента списка обнуляем отступ. Чтобы отодвинуть следующий элемент от списка мы задаём отступ основному тегу списка <code>ul</code>
+                </div>  
+            </div>   
         </div>
         <script src="script.js"></script>
     </main>

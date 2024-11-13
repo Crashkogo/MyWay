@@ -595,3 +595,56 @@ a.mlink:visited {
     left: 20px;
     z-index: 1;
 }
+.mp_container {
+    width: 700px;
+    background: #666;
+    display: flex;
+}
+.mp_item {
+    background: #1575db;
+    width: 200px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.mp_h1{
+    margin: 0;
+    padding: 0;
+    
+}
+.h1_class{
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.mp_container2{
+    background: #666;
+    width: 700px; 
+}
+
+.mp_list{
+    margin-bottom: 15px;
+}
+
+.mp_menu{
+    display: inline-flex;
+    list-style: none;
+    background: #35a36c;
+    margin-right: 15px;
+}
+
+.mp_menu li{
+    padding: 10px;
+    margin-right: 15px;
+    background-color: #0056b3;
+}
+.mp_menu li:last-child{
+    margin-right: 0;
+}
+
+.mp_box{
+    width: 150px;
+    height: 150px;
+    background-color: #b697ff;;
+}
+.mp{
+    display: flex;
+}
