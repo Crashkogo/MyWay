@@ -718,8 +718,9 @@
                 <div class="item">
                     Для отделения блоков, следует использовать margin. Тут наглядно видно свойство
                     <code>margin-right;</code> 15px; и <code>margin-bottom;</code> 10px;. <br>
-                    margin(ы) задаются от предыдущего элемента к следующему, от первого ко второму, сверху вниз, слева направо. <br>
-                    
+                    margin(ы) задаются от предыдущего элемента к следующему, от первого ко второму, сверху вниз, слева
+                    направо. <br>
+
                 </div>
             </div>
             <div class="items">
@@ -730,73 +731,170 @@
                     <h1 class="mp_h1 h1_class">Lorem ipsum dolor sit amet consectetur.</h1>
                 </div>
                 <div class="item">
-                   Для текста мы используем <code>padding</code>. Для наглядности наш контейнер я расположил над тэгом h1. <br>
-                   В курсе рассказыается, что тэг h1 сам по себе имеет значение padding, поэтому показано как его обнулить.
-                   *{ <br>
+                    Для текста мы используем <code>padding</code>. Для наглядности наш контейнер я расположил над тэгом
+                    h1. <br>
+                    В курсе рассказыается, что тэг h1 сам по себе имеет значение padding, поэтому показано как его
+                    обнулить.
+                    *{ <br>
                     margin: 0; <br>
                     padding: 0; <br>
-                } <br>
-                Таким образом обнуляются все отступы для всех тэгов. Конкретно для этого тэга я двумя классами сначала обнуляю, потом устанавливаю отступы сверху и слева по 15px.
+                    } <br>
+                    Таким образом обнуляются все отступы для всех тэгов. Конкретно для этого тэга я двумя классами
+                    сначала обнуляю, потом устанавливаю отступы сверху и слева по 15px.
                 </div>
             </div>
             <div class="items">
                 <div class="item">
-                   <div class="mp_container2">
-                    <div class="mp_list ">
-                        <div>
-                            <ul class="mp_h1">
-                                <li>Lorem ipsum dolor sit amet.</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                            </ul>
+                    <div class="mp_container2">
+                        <div class="mp_list ">
+                            <div>
+                                <ul class="mp_h1">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="mp_list">
-                        <div>
-                            <ul class="mp_h1">
-                                <li>Lorem ipsum dolor sit amet.</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                            </ul>
+                        <div class="mp_list">
+                            <div>
+                                <ul class="mp_h1">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="mp_list">
-                        <div>
-                            <ul class="mp_h1">
-                                <li>Lorem ipsum dolor sit amet.</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                            </ul>
+                        <div class="mp_list">
+                            <div>
+                                <ul class="mp_h1">
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                   </div>
                 </div>
                 <div class="item">
                     В этом примере демонстрируется большая вложенная структура для формирования списков как пример. <br>
-                    Для указания отступов между элементами, мы задаём отступы для элементов одного уровня в данном случае верхний div контейнер.
-                </div>  
-            </div> 
+                    Для указания отступов между элементами, мы задаём отступы для элементов одного уровня в данном
+                    случае верхний div контейнер.
+                </div>
+            </div>
             <div class="items">
                 <div class="item mp">
-                   <ul class="mp_menu">
-                    <li><a href="#">Link link</a></li>
-                    <li><a href="#">Link link</a></li>
-                    <li><a href="#">Link link</a></li>
-                    <li><a href="#">Link link</a></li>
-                   </ul>
-                   <div class="mp_box">box</div>
+                    <ul class="mp_menu">
+                        <li><a href="#">Link link</a></li>
+                        <li><a href="#">Link link</a></li>
+                        <li><a href="#">Link link</a></li>
+                        <li><a href="#">Link link</a></li>
+                    </ul>
+                    <div class="mp_box">box</div>
                 </div>
-                
+
                 <div class="item">
-                    При установлении отступов в списке, мы получаем отступ у последнего элемента и для нормального отображения блока мы пользуемся такой конструкцией. <br>
+                    При установлении отступов в списке, мы получаем отступ у последнего элемента и для нормального
+                    отображения блока мы пользуемся такой конструкцией. <br>
                     .mp_menu li:last-child{ <br>
-                        margin-right: 0; <br>
+                    margin-right: 0; <br>
                     } <br>
-                    Мы для последнего элемента списка обнуляем отступ. Чтобы отодвинуть следующий элемент от списка мы задаём отступ основному тегу списка <code>ul</code>
-                </div>  
-            </div>   
+                    Мы для последнего элемента списка обнуляем отступ. Чтобы отодвинуть следующий элемент от списка мы
+                    задаём отступ основному тегу списка <code>ul</code>
+                </div>
+            </div>
+        </div>
+        <button class="accordion">Выравнивание по центру и анимация</button>
+        <div class="panel">
+            <div class="items">
+                <div class="item">
+                    <img src="img/csslogo.png" alt="CssLogo" class="css_logo">
+                </div>
+                <div class="item">
+                    <code>
+                        По скольку тэг img является строчным, чтобы выровнять его по центру надо наложить на него свойство блока и задать выравнивающий margin
+                        .css_logo { <br>
+                            transform: scale(80%); /* Уменьшает размер элемента до 80% от его исходного размера */ <br>
+                            display: block; /* Устанавливает блочное отображение элемента */ <br>
+                            margin: 0 auto; /* Выравнивает элемент по центру по горизонтали */ <br>
+                        } <br>
+                        </code>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="item">
+                    <div class="center-container">
+                        <img src="img/csslogo.png" alt="CssLogo" class="css_logo2">
+                        <p>Тут текст в центре</p>
+                    </div>
+
+                </div>
+                <div class="item">
+                    При использовании строчного тэга без конвертации его в блочный. Мы используем на контейнере где
+                    хранится элемент. <br>
+                    <code> text-align: center;</code><br>
+                    И так выравниваем объекты внутри контейнера <br>
+                    При использовании <code>display: flex; </code> Мы используем свойства относящиеся к flex-box. <br>
+                    <code>justify-content: center;</code>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="item animation-container">
+
+                </div>
+                <div class="item">
+                    <code>
+                            .animation-container { <br>
+                                height: 300px; /* Высота контейнера установлена в 300 пикселей */ <br>
+                                background-image: url(img/chain.png); /* Устанавливает изображение в качестве фона */ <br>
+                                background-repeat: repeat-x; /* Фоновое изображение повторяется по горизонтали */ <br>
+                                animation: slide 1s linear infinite; /* Применяет анимацию "slide", которая длится 1 секунду, идет с постоянной скоростью (linear) и бесконечно повторяется */ <br>
+                            } <br>
+                            <br>
+                            @keyframes slide { /* Определяет анимацию с именем "slide" */ <br>
+                                0% { <br>
+                                    background-position: 0% 0%; /* На начальном этапе фон расположен в исходной позиции */ <br>
+                                } <br>
+                                50% { <br>
+                                    background-position: 100% 0%; /* В середине анимации фон перемещается в конец по горизонтали */ <br>
+                                } <br>
+                                100% { <br>
+                                    background-position: 0% 0%; /* В конце цикла фон возвращается в исходную позицию */ <br>
+                                } <br>
+                            } <br>
+                        </code>
+                </div>
+            </div>
+        </div>
+        <button class="accordion">Переменные root и Функция calc</button>
+        <div class="panel">
+            <div class="items">
+                <div class="item">
+                    Переменные задаём таким образом: <br>
+                    <code>:root{ <br>
+                    --color1: red; <br>
+                    --color2: yellow; <br>
+                    } <br></code>
+                    Обращаемся к переменным в css стилях так: <br>
+                    <code>
+                        background-color: color--;
+                    </code>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item">
+                    Функция calc() используется для выполнения математических вычислений прямо в CSS, чтобы задавать значения свойств. Она позволяет комбинировать разные единицы измерения (px, %, em, vw и т.д.) в одном выражении. <br>
+                    <pre><code>
+.content { 
+   padding: calc(10px + 2%); /* Отступ = 10px плюс 2% ширины контейнера */ 
+ } 
+                    </code></pre>
+                    Используем calc() там, где нужно учитывать динамические размеры (например, гибкая верстка).
+                </div>
+            </div>
         </div>
         <script src="script.js"></script>
     </main>
